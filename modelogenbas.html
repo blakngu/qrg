@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 8 El Modelo Genético Básico | Genética II: Guía de Referencia Rápida</title>
+  <meta name="description" content="Apuntes del curso Genética II. Contenido teórico mínimo para el seguimiento del curso" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 8 El Modelo Genético Básico | Genética II: Guía de Referencia Rápida" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Apuntes del curso Genética II. Contenido teórico mínimo para el seguimiento del curso" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 8 El Modelo Genético Básico | Genética II: Guía de Referencia Rápida" />
+  
+  <meta name="twitter:description" content="Apuntes del curso Genética II. Contenido teórico mínimo para el seguimiento del curso" />
+  
+
+<meta name="author" content="Hugo Naya" />
+<meta name="author" content="(Federica Marín)" />
+<meta name="author" content="(Jorge Urioste, Rodrigo Vivián, María André, Andrea Larracharte," />
+<meta name="author" content="Washington Bell, Ana Laura Sánchez, Micaela Botta, Paula Batista)" />
+<meta name="author" content="(Paola Gaiero)" />
+
+
+<meta name="date" content="2022-03-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="microbial.html"/>
+<link rel="next" href="parentesco.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Genética II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a></li>
+<li class="part"><span><b>Parte I: Genómica</b></span></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción a la Genómica</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#variabilidad-genética"><i class="fa fa-check"></i><b>1.1</b> Variabilidad genética</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#metagenómica-y-metatranscriptómica"><i class="fa fa-check"></i><b>1.1.1</b> Metagenómica y Metatranscriptómica</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#genómica-composicional"><i class="fa fa-check"></i><b>1.2</b> Genómica composicional</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#genómica-comparativa"><i class="fa fa-check"></i><b>1.3</b> Genómica comparativa</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#genómica-funcional"><i class="fa fa-check"></i><b>1.4</b> Genómica funcional</a></li>
+</ul></li>
+<li class="part"><span><b>Parte II: Genética de Poblaciones</b></span></li>
+<li class="chapter" data-level="2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html"><i class="fa fa-check"></i><b>2</b> Variación y equilibrio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#el-equilibrio-de-hardy-weinberg"><i class="fa fa-check"></i><b>2.1</b> El equilibrio de Hardy-Weinberg</a>
+<ul>
+<li class="chapter" data-level="" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#supuestos-que-asumimos-se-cumplen-para-h-w"><i class="fa fa-check"></i>Supuestos que asumimos se cumplen para H-W</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#el-equilibrio-de-hardy-weinberg-en-cromosomas-ligados-al-sexo"><i class="fa fa-check"></i><b>2.2</b> El equilibrio de Hardy-Weinberg en cromosomas ligados al sexo</a></li>
+<li class="chapter" data-level="2.3" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#tres-o-más-alelos"><i class="fa fa-check"></i><b>2.3</b> Tres o más alelos</a></li>
+<li class="chapter" data-level="2.4" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#dónde-se-esconden-los-alelos-recesivos"><i class="fa fa-check"></i><b>2.4</b> ¿Dónde se “esconden” los alelos recesivos?</a></li>
+<li class="chapter" data-level="2.5" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#hardy-weinberg-en-especies-poliploides"><i class="fa fa-check"></i><b>2.5</b> Hardy-Weinberg en especies poliploides</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="deriva.html"><a href="deriva.html#el-rol-de-los-procesos-estocásticos-en-la-genética"><i class="fa fa-check"></i><b>3.1</b> El rol de los procesos estocásticos en la genética</a></li>
+<li class="chapter" data-level="3.2" data-path="deriva.html"><a href="deriva.html#el-modelo-de-wright-fisher"><i class="fa fa-check"></i><b>3.2</b> El modelo de Wright-Fisher</a></li>
+<li class="chapter" data-level="3.3" data-path="deriva.html"><a href="deriva.html#el-rol-de-la-subdivisión-poblacional-en-la-evolución-de-las-frecuencias-alélicas"><i class="fa fa-check"></i><b>3.3</b> El rol de la subdivisión poblacional en la evolución de las frecuencias alélicas</a>
+<ul>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#homocigosidad-y-heterocigosidad"><i class="fa fa-check"></i>Homocigosidad y Heterocigosidad</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="deriva.html"><a href="deriva.html#tamaño-efectivo-poblacional"><i class="fa fa-check"></i><b>3.4</b> Tamaño efectivo poblacional</a></li>
+<li class="chapter" data-level="3.5" data-path="deriva.html"><a href="deriva.html#aproximación-de-difusión"><i class="fa fa-check"></i><b>3.5</b> Aproximación de difusión</a>
+<ul>
+<li class="chapter" data-level="" data-path="deriva.html"><a href="deriva.html#caminatas-al-azar-y-procesos-de-difusión"><i class="fa fa-check"></i>Caminatas al azar y procesos de difusión</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="deriva.html"><a href="deriva.html#probabilidad-de-fijación-y-tiempos-de-fijación"><i class="fa fa-check"></i><b>3.6</b> Probabilidad de fijación y tiempos de fijación</a></li>
+<li class="chapter" data-level="3.7" data-path="deriva.html"><a href="deriva.html#el-modelo-coalescente"><i class="fa fa-check"></i><b>3.7</b> El modelo coalescente</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="seleccion.html"><a href="seleccion.html"><i class="fa fa-check"></i><b>4</b> Selección Natural</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="seleccion.html"><a href="seleccion.html#selección-natural-en-el-modelo-de-un-locus-con-dos-alelos"><i class="fa fa-check"></i><b>4.1</b> Selección natural en el modelo de un locus con dos alelos</a></li>
+<li class="chapter" data-level="4.2" data-path="seleccion.html"><a href="seleccion.html#diferentes-formas-de-selección"><i class="fa fa-check"></i><b>4.2</b> Diferentes formas de selección</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="seleccion.html"><a href="seleccion.html#selección-direccional"><i class="fa fa-check"></i><b>4.2.1</b> Selección direccional</a></li>
+<li class="chapter" data-level="4.2.2" data-path="seleccion.html"><a href="seleccion.html#selección-disruptiva"><i class="fa fa-check"></i><b>4.2.2</b> Selección disruptiva</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="seleccion.html"><a href="seleccion.html#el-teorema-fundamental-de-la-selección-natural"><i class="fa fa-check"></i><b>4.3</b> El teorema fundamental de la selección natural</a></li>
+<li class="chapter" data-level="4.4" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-mutación"><i class="fa fa-check"></i><b>4.4</b> Equilibrio selección-mutación</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="seleccion.html"><a href="seleccion.html#el-principio-de-haldane-muller"><i class="fa fa-check"></i><b>4.4.1</b> El principio de Haldane-Muller</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="seleccion.html"><a href="seleccion.html#la-fuerza-de-la-selección-natural"><i class="fa fa-check"></i><b>4.5</b> La fuerza de la selección natural</a></li>
+<li class="chapter" data-level="4.6" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-deriva"><i class="fa fa-check"></i><b>4.6</b> Equilibrio selección-deriva</a></li>
+<li class="chapter" data-level="4.7" data-path="seleccion.html"><a href="seleccion.html#otros-tipos-de-selección-y-complejidades"><i class="fa fa-check"></i><b>4.7</b> Otros tipos de selección y complejidades</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dosloci.html"><a href="dosloci.html"><i class="fa fa-check"></i><b>5</b> Dinámica de 2 <em>loci</em></a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="dosloci.html"><a href="dosloci.html#desequilibrio-de-ligamiento-y-recombinación"><i class="fa fa-check"></i><b>5.1</b> Desequilibrio de ligamiento y recombinación</a></li>
+<li class="chapter" data-level="5.2" data-path="dosloci.html"><a href="dosloci.html#la-evolución-en-el-tiempo-del-desequilibrio-de-ligamiento"><i class="fa fa-check"></i><b>5.2</b> La evolución en el tiempo del desequilibrio de ligamiento</a></li>
+<li class="chapter" data-level="5.3" data-path="dosloci.html"><a href="dosloci.html#otras-medidas-de-asociación"><i class="fa fa-check"></i><b>5.3</b> Otras medidas de asociación</a></li>
+<li class="chapter" data-level="5.4" data-path="dosloci.html"><a href="dosloci.html#selección-en-modelos-de-dos-loci"><i class="fa fa-check"></i><b>5.4</b> Selección en modelos de dos <em>loci</em></a>
+<ul>
+<li><a href="dosloci.html#selección-en-un-locus-impacto-en-loci-en-desequilibrio-de-ligamiento">Selección en un locus: impacto en <em>loci</em> en desequilibrio de ligamiento</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="dosloci.html"><a href="dosloci.html#arrastre-genético-genetic-hitchhiking-o-genetic-draft"><i class="fa fa-check"></i><b>5.5</b> Arrastre genético (“genetic hitchhiking” o “genetic draft”)</a></li>
+<li class="chapter" data-level="5.6" data-path="dosloci.html"><a href="dosloci.html#causas-del-desequilibrio-de-ligamiento"><i class="fa fa-check"></i><b>5.6</b> Causas del desequilibrio de ligamiento</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aparnoalazar.html"><a href="aparnoalazar.html"><i class="fa fa-check"></i><b>6</b> Apareamientos no-aleatorios</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="aparnoalazar.html"><a href="aparnoalazar.html#el-concepto-de-identidad-por-ascendencia-ibd"><i class="fa fa-check"></i><b>6.1</b> El concepto de “identidad por ascendencia” (IBD)</a></li>
+<li class="chapter" data-level="6.2" data-path="aparnoalazar.html"><a href="aparnoalazar.html#generalización-de-hardy-weinberg-para-apareamientos-no-aleatorios"><i class="fa fa-check"></i><b>6.2</b> Generalización de Hardy-Weinberg para apareamientos no-aleatorios</a></li>
+<li class="chapter" data-level="6.3" data-path="aparnoalazar.html"><a href="aparnoalazar.html#f-como-correlación-entre-gametos-unidos"><i class="fa fa-check"></i><b>6.3</b> <em>F</em> como correlación entre gametos unidos</a></li>
+<li class="chapter" data-level="6.4" data-path="aparnoalazar.html"><a href="aparnoalazar.html#endocría-y-depresión-endogámica"><i class="fa fa-check"></i><b>6.4</b> Endocría y depresión endogámica</a></li>
+<li class="chapter" data-level="6.5" data-path="aparnoalazar.html"><a href="aparnoalazar.html#un-caso-extremo-la-autogamia"><i class="fa fa-check"></i><b>6.5</b> Un caso extremo: la autogamia</a></li>
+<li class="chapter" data-level="6.6" data-path="aparnoalazar.html"><a href="aparnoalazar.html#el-coeficiente-de-endocría-y-estadísticos-f"><i class="fa fa-check"></i><b>6.6</b> El Coeficiente de endocría y estadísticos <em>F</em></a></li>
+<li class="chapter" data-level="6.7" data-path="aparnoalazar.html"><a href="aparnoalazar.html#el-efecto-wahlund"><i class="fa fa-check"></i><b>6.7</b> El efecto Wahlund</a></li>
+<li class="chapter" data-level="6.8" data-path="aparnoalazar.html"><a href="aparnoalazar.html#subdivisión-migración-y-el-modelo-de-islas"><i class="fa fa-check"></i><b>6.8</b> Subdivisión, migración y el modelo de islas</a></li>
+<li class="chapter" data-level="6.9" data-path="aparnoalazar.html"><a href="aparnoalazar.html#mecanismos-de-especiación"><i class="fa fa-check"></i><b>6.9</b> Mecanismos de especiación</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="microbial.html"><a href="microbial.html"><i class="fa fa-check"></i><b>7</b> Genética de Poblaciones Microbianas</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="microbial.html"><a href="microbial.html#genómica-y-mecanismos-de-herencia-en-procariotas"><i class="fa fa-check"></i><b>7.1</b> Genómica y mecanismos de herencia en procariotas</a></li>
+<li class="chapter" data-level="7.2" data-path="microbial.html"><a href="microbial.html#dinámica-de-las-poblaciones-bacterianas"><i class="fa fa-check"></i><b>7.2</b> Dinámica de las poblaciones bacterianas</a></li>
+<li class="chapter" data-level="7.3" data-path="microbial.html"><a href="microbial.html#modelos-haploides-de-selección-natural"><i class="fa fa-check"></i><b>7.3</b> Modelos haploides de selección natural</a></li>
+<li class="chapter" data-level="7.4" data-path="microbial.html"><a href="microbial.html#los-modelos-de-moran-y-de-fisión-versus-el-de-wright-fisher"><i class="fa fa-check"></i><b>7.4</b> Los modelos de Moran y de Fisión versus el de Wright-Fisher</a></li>
+<li class="chapter" data-level="7.5" data-path="microbial.html"><a href="microbial.html#el-rol-de-la-transferencia-horizontal"><i class="fa fa-check"></i><b>7.5</b> El rol de la transferencia horizontal</a></li>
+<li class="chapter" data-level="7.6" data-path="microbial.html"><a href="microbial.html#selección-vs-neutralismo-los-procariotas-en-el-debate"><i class="fa fa-check"></i><b>7.6</b> Selección vs Neutralismo: los procariotas en el debate</a></li>
+<li class="chapter" data-level="7.7" data-path="microbial.html"><a href="microbial.html#genómica-poblacional"><i class="fa fa-check"></i><b>7.7</b> Genómica poblacional</a></li>
+<li class="chapter" data-level="7.8" data-path="microbial.html"><a href="microbial.html#genes-de-resistencia"><i class="fa fa-check"></i><b>7.8</b> Genes de resistencia</a></li>
+<li class="chapter" data-level="7.9" data-path="microbial.html"><a href="microbial.html#introducción-a-la-epidemiología-modelos-compartimentales"><i class="fa fa-check"></i><b>7.9</b> Introducción a la epidemiología: modelos compartimentales</a></li>
+</ul></li>
+<li class="part"><span><b>Parte III: Genética Cuantitativa</b></span></li>
+<li class="chapter" data-level="8" data-path="modelogenbas.html"><a href="modelogenbas.html"><i class="fa fa-check"></i><b>8</b> El Modelo Genético Básico</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="modelogenbas.html"><a href="modelogenbas.html#variación-continua-y-discreta"><i class="fa fa-check"></i><b>8.1</b> Variación continua y discreta</a></li>
+<li class="chapter" data-level="8.2" data-path="modelogenbas.html"><a href="modelogenbas.html#el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.2</b> El modelo genético básico</a></li>
+<li class="chapter" data-level="8.3" data-path="modelogenbas.html"><a href="modelogenbas.html#modelo-genético-básico-un-locus-con-dos-alelos"><i class="fa fa-check"></i><b>8.3</b> Modelo Genético Básico: un <em>locus</em> con dos alelos</a>
+<ul>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#media-de-la-población"><i class="fa fa-check"></i>Media de la población</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="modelogenbas.html"><a href="modelogenbas.html#efecto-medio"><i class="fa fa-check"></i><b>8.4</b> Efecto medio</a></li>
+<li class="chapter" data-level="8.5" data-path="modelogenbas.html"><a href="modelogenbas.html#valor-reproductivo-o-valor-de-cría"><i class="fa fa-check"></i><b>8.5</b> Valor reproductivo (o valor de cría)</a></li>
+<li class="chapter" data-level="8.6" data-path="modelogenbas.html"><a href="modelogenbas.html#desvío-de-dominancia"><i class="fa fa-check"></i><b>8.6</b> Desvío de dominancia</a></li>
+<li class="chapter" data-level="8.7" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-en-el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.7</b> La Varianza en el modelo genético básico</a>
+<ul>
+<li><a href="modelogenbas.html#componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos">Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-ambiental"><i class="fa fa-check"></i>La varianza ambiental</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="parentesco.html"><a href="parentesco.html"><i class="fa fa-check"></i><b>9</b> Parentesco y Semejanza entre Parientes</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="parentesco.html"><a href="parentesco.html#parentesco-aditivo"><i class="fa fa-check"></i><b>9.1</b> Parentesco aditivo</a>
+<ul>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#diagramas-de-flechas"><i class="fa fa-check"></i>Diagramas de flechas</a></li>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#el-método-tabular"><i class="fa fa-check"></i>El método tabular</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="parentesco.html"><a href="parentesco.html#parentesco-de-dominancia"><i class="fa fa-check"></i><b>9.2</b> Parentesco de dominancia</a></li>
+<li class="chapter" data-level="9.3" data-path="parentesco.html"><a href="parentesco.html#semejanza-entre-parientes"><i class="fa fa-check"></i><b>9.3</b> Semejanza entre parientes</a></li>
+<li class="chapter" data-level="9.4" data-path="parentesco.html"><a href="parentesco.html#estimación-de-las-varianzas-aditiva-y-de-dominancia"><i class="fa fa-check"></i><b>9.4</b> Estimación de las varianzas aditiva y de dominancia</a>
+<ul>
+<li class="chapter" data-level="" data-path="parentesco.html"><a href="parentesco.html#estimación-de-la-varianza-aditiva-a-partir-del-análisis-de-varianza-anova-y-blup"><i class="fa fa-check"></i>Estimación de la varianza aditiva a partir del análisis de varianza (ANOVA y BLUP)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="parentesco.html"><a href="parentesco.html#parentesco-genómico"><i class="fa fa-check"></i><b>9.5</b> Parentesco genómico</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pargen.html"><a href="pargen.html"><i class="fa fa-check"></i><b>10</b> Parámetros Genéticos: Heredabilidad y Repetibilidad</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="pargen.html"><a href="pargen.html#heredabilidad"><i class="fa fa-check"></i><b>10.1</b> Heredabilidad</a>
+<ul>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#la-heredabilidad-como-relación-de-varianzas"><i class="fa fa-check"></i>La heredabilidad como relación de varianzas</a></li>
+<li class="chapter" data-level="" data-path="pargen.html"><a href="pargen.html#la-heredabilidad-como-regresión"><i class="fa fa-check"></i>La heredabilidad como regresión</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="pargen.html"><a href="pargen.html#heredabilidad-en-sentido-amplio-y-sentido-estricto"><i class="fa fa-check"></i><b>10.2</b> Heredabilidad en sentido amplio y sentido estricto</a></li>
+<li class="chapter" data-level="10.3" data-path="pargen.html"><a href="pargen.html#heredabilidad-lograda"><i class="fa fa-check"></i><b>10.3</b> Heredabilidad lograda</a></li>
+<li class="chapter" data-level="10.4" data-path="pargen.html"><a href="pargen.html#repetibilidad"><i class="fa fa-check"></i><b>10.4</b> Repetibilidad</a></li>
+<li class="chapter" data-level="10.5" data-path="pargen.html"><a href="pargen.html#la-repetibilidad-como-herramienta-en-la-predicción"><i class="fa fa-check"></i><b>10.5</b> La repetibilidad como herramienta en la predicción</a></li>
+<li class="chapter" data-level="10.6" data-path="pargen.html"><a href="pargen.html#evolucionabilidad"><i class="fa fa-check"></i><b>10.6</b> Evolucionabilidad</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="selartifI.html"><a href="selartifI.html#factores-de-corrección"><i class="fa fa-check"></i><b>11.1</b> Factores de corrección</a></li>
+<li class="chapter" data-level="11.2" data-path="selartifI.html"><a href="selartifI.html#la-respuesta-a-la-selección-y-su-predicción"><i class="fa fa-check"></i><b>11.2</b> La respuesta a la selección y su predicción</a></li>
+<li class="chapter" data-level="11.3" data-path="selartifI.html"><a href="selartifI.html#diferencial-de-selección-e-intensidad-de-selección"><i class="fa fa-check"></i><b>11.3</b> Diferencial de selección e intensidad de selección</a></li>
+<li class="chapter" data-level="11.4" data-path="selartifI.html"><a href="selartifI.html#intensidad-de-selección-y-proporción-seleccionada"><i class="fa fa-check"></i><b>11.4</b> Intensidad de selección y proporción seleccionada</a></li>
+<li class="chapter" data-level="11.5" data-path="selartifI.html"><a href="selartifI.html#intervalo-generacional"><i class="fa fa-check"></i><b>11.5</b> Intervalo generacional</a></li>
+<li class="chapter" data-level="11.6" data-path="selartifI.html"><a href="selartifI.html#progreso-genético-generacional-y-anual"><i class="fa fa-check"></i><b>11.6</b> Progreso genético generacional y anual</a></li>
+<li class="chapter" data-level="11.7" data-path="selartifI.html"><a href="selartifI.html#cambio-en-las-frecuencias-alélicas-bajo-selección-artificial"><i class="fa fa-check"></i><b>11.7</b> Cambio en las frecuencias alélicas bajo selección artificial</a></li>
+<li class="chapter" data-level="11.8" data-path="selartifI.html"><a href="selartifI.html#el-diferencial-de-selección-direccional-y-la-identidad-de-robertson-price"><i class="fa fa-check"></i><b>11.8</b> El diferencial de selección direccional y la identidad de Robertson-Price</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="correlacionada.html"><a href="correlacionada.html"><i class="fa fa-check"></i><b>12</b> Correlaciones y Respuesta Correlacionada</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="correlacionada.html"><a href="correlacionada.html#causas-genéticas-y-ambientales-de-las-correlaciones"><i class="fa fa-check"></i><b>12.1</b> Causas genéticas y ambientales de las correlaciones</a></li>
+<li class="chapter" data-level="12.2" data-path="correlacionada.html"><a href="correlacionada.html#introducción-al-path-analysis"><i class="fa fa-check"></i><b>12.2</b> Introducción al “path analysis”</a></li>
+<li class="chapter" data-level="12.3" data-path="correlacionada.html"><a href="correlacionada.html#métodos-para-determinar-la-correlación-genética"><i class="fa fa-check"></i><b>12.3</b> Métodos para determinar la correlación genética</a></li>
+<li class="chapter" data-level="12.4" data-path="correlacionada.html"><a href="correlacionada.html#la-correlación-fenotípica-y-su-relación-con-la-correlación-genética-aditiva-y-ambiental"><i class="fa fa-check"></i><b>12.4</b> La correlación fenotípica y su relación con la correlación genética aditiva y ambiental</a></li>
+<li class="chapter" data-level="12.5" data-path="correlacionada.html"><a href="correlacionada.html#respuesta-correlacionada"><i class="fa fa-check"></i><b>12.5</b> Respuesta correlacionada</a>
+<ul>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#eficiencia-en-relación-a-la-selección-directa"><i class="fa fa-check"></i>Eficiencia en relación a la selección directa</a></li>
+<li class="chapter" data-level="" data-path="correlacionada.html"><a href="correlacionada.html#el-signo-de-la-correlación-y-el-beneficio-demérito-de-la-misma"><i class="fa fa-check"></i>El signo de la correlación y el beneficio-demérito de la misma</a></li>
+</ul></li>
+<li class="chapter" data-level="12.6" data-path="correlacionada.html"><a href="correlacionada.html#matrices-de-varianza-covarianza"><i class="fa fa-check"></i><b>12.6</b> Matrices de varianza-covarianza</a></li>
+<li class="chapter" data-level="12.7" data-path="correlacionada.html"><a href="correlacionada.html#la-forma-generalizada-de-la-ecuación-del-criador"><i class="fa fa-check"></i><b>12.7</b> La forma generalizada de la ecuación del criador</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="selartifII.html"><a href="selartifII.html"><i class="fa fa-check"></i><b>13</b> Selección Artificial II</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="selartifII.html"><a href="selartifII.html#criterios-y-objetivos-de-selección"><i class="fa fa-check"></i><b>13.1</b> Criterios y objetivos de selección</a></li>
+<li class="chapter" data-level="13.2" data-path="selartifII.html"><a href="selartifII.html#selección-basada-en-un-solo-tipo-de-fuente-de-información"><i class="fa fa-check"></i><b>13.2</b> Selección basada en un solo tipo de fuente de información</a></li>
+<li class="chapter" data-level="13.3" data-path="selartifII.html"><a href="selartifII.html#combinando-la-información-proporcionada-por-diferentes-tipos-de-parientes"><i class="fa fa-check"></i><b>13.3</b> Combinando la información proporcionada por diferentes tipos de parientes</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#información-propia-y-de-varios-hermanos-enteros"><i class="fa fa-check"></i>Información propia y de varios hermanos enteros</a></li>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#pruebas-de-progenie"><i class="fa fa-check"></i>Pruebas de progenie</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="selartifII.html"><a href="selartifII.html#métodos-de-selección-para-varias-características"><i class="fa fa-check"></i><b>13.4</b> Métodos de selección para varias características</a></li>
+<li class="chapter" data-level="13.5" data-path="selartifII.html"><a href="selartifII.html#índices-de-selección-para-múltiples-características"><i class="fa fa-check"></i><b>13.5</b> Índices de selección para múltiples características</a></li>
+<li class="chapter" data-level="13.6" data-path="selartifII.html"><a href="selartifII.html#métodos-y-técnicas-avanzadas-de-selección"><i class="fa fa-check"></i><b>13.6</b> Métodos y técnicas avanzadas de selección</a>
+<ul>
+<li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#blup-las-ecuaciones-del-modelo-mixto-lineal"><i class="fa fa-check"></i>BLUP: las ecuaciones del modelo mixto lineal</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="endoexo.html"><a href="endoexo.html#el-aumento-de-la-consanguinidad-a-partir-del-número-de-individuos"><i class="fa fa-check"></i><b>14.1</b> El aumento de la consanguinidad a partir del número de individuos</a>
+<ul>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#qué-proporción-de-machos-es-necesaria-para-mantener-un-tamaño-efectivo-poblacional-mínimo"><i class="fa fa-check"></i>¿Qué proporción de machos es necesaria para mantener un tamaño efectivo poblacional mínimo?</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="endoexo.html"><a href="endoexo.html#el-coeficiente-de-consanguinidad-en-razas-lecheras"><i class="fa fa-check"></i><b>14.2</b> El coeficiente de consanguinidad en razas lecheras</a></li>
+<li class="chapter" data-level="14.3" data-path="endoexo.html"><a href="endoexo.html#depresión-endogámica"><i class="fa fa-check"></i><b>14.3</b> Depresión endogámica</a>
+<ul>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#los-riesgos-del-uso-masivo-de-reproductores-y-la-endogamia-elevada"><i class="fa fa-check"></i>Los riesgos del uso masivo de reproductores y la endogamia elevada</a></li>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#redistribución-en-la-varianza-genética"><i class="fa fa-check"></i>Redistribución en la varianza genética</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="endoexo.html"><a href="endoexo.html#exocría-y-heterosis"><i class="fa fa-check"></i><b>14.4</b> Exocría y Heterosis</a>
+<ul>
+<li class="chapter" data-level="" data-path="endoexo.html"><a href="endoexo.html#un-modelo-sencillo-de-heterosis-bajo-exocría"><i class="fa fa-check"></i>Un modelo sencillo de heterosis bajo exocría</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5" data-path="endoexo.html"><a href="endoexo.html#modelo-genético-de-cruzamientos"><i class="fa fa-check"></i><b>14.5</b> Modelo genético de cruzamientos</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="GxE.html"><a href="GxE.html"><i class="fa fa-check"></i><b>15</b> Normas de reacción e interacción Genotipo x Ambiente</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="GxE.html"><a href="GxE.html#plasticidad-fenotípica-y-normas-de-reacción"><i class="fa fa-check"></i><b>15.1</b> Plasticidad fenotípica y normas de reacción</a></li>
+<li class="chapter" data-level="15.2" data-path="GxE.html"><a href="GxE.html#correlación-genética-a-través-de-dos-ambientes"><i class="fa fa-check"></i><b>15.2</b> Correlación genética a través de dos ambientes</a></li>
+<li class="chapter" data-level="15.3" data-path="GxE.html"><a href="GxE.html#genética-cuantitativa-de-la-interacción-gxe"><i class="fa fa-check"></i><b>15.3</b> Genética cuantitativa de la interacción GxE</a></li>
+<li class="chapter" data-level="15.4" data-path="GxE.html"><a href="GxE.html#otros-ejemplos-de-interacción-genotipo-ambiente"><i class="fa fa-check"></i><b>15.4</b> Otros ejemplos de interacción genotipo-ambiente</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Genética II: Guía de Referencia Rápida</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="modelogenbas" class="section level1" number="8">
+<h1><span class="header-section-number">Capítulo 8</span> El Modelo Genético Básico</h1>
+<div id="variación-continua-y-discreta" class="section level2" number="8.1">
+<h2><span class="header-section-number">8.1</span> Variación continua y discreta</h2>
+<div class="graybox">
+<ul>
+<li><p>El <strong>Teorema del límite central</strong> propone que la suma de muchas y diferentes variables aleatorias producen una variación casi contínua.</p></li>
+<li><p>El <strong>Modelo infinitesimal</strong> supone que las características continuas pueden consistir de la suma infinitesimal de los aportes de un número infinito de <em>loci</em>.</p></li>
+<li><p>Cuando nos enfrentamos a una variación de tipo <strong>categórica</strong> (es decir con un número finito y contable de las mismas), donde a su vez asumimos que cada combinación de dos alelos producirá una categoría distinta, con <span class="math inline">\(k\)</span> alelos podemos formar <span class="math inline">\(n=k(k+1)/2\)</span> genotipos diploides diferentes (incluyendo los homocigotos).</p></li>
+<li><p>Los <strong>modelos Umbral</strong> se construyen a partir de la suposición de que existe una característica subyacente no observable, que es continua y que al sobrepasar un determinado valor cierta característica se menifiesta.</p></li>
+</ul>
+</div>
+<hr />
+<p><br />
+</p>
+</div>
+<div id="el-modelo-genético-básico" class="section level2" number="8.2">
+<h2><span class="header-section-number">8.2</span> El modelo genético básico</h2>
+<div class="graybox">
+<ul>
+<li><p>Definiremos al <strong>fenotipo</strong> (<span class="math inline">\(P\)</span>) de un individuo como la suma de los efectos genéticos (<span class="math inline">\(G\)</span>), los ambientales (<span class="math inline">\(E\)</span>) y la interacción entre los mismos (<span class="math inline">\(I_{G\times E}\)</span>).</p></li>
+<li><p>El <strong>genotipo</strong> del individuo, definido como el arreglo particular de alelos en los distintos <em>loci</em>, consistirá de la suma de los efectos aditivos (<span class="math inline">\(A\)</span>), de dominancia (<span class="math inline">\(D\)</span>) y epistáticos (<span class="math inline">\(I\)</span>).</p></li>
+</ul>
+<p>-Los <strong>efectos aditivos</strong> corresponden al efecto que cada alelo confiere a la característica, independiente de la combinación en que se encuentre, tanto dentro de su locus como considerando lo que hay en otros <em>loci</em>. Tomando como referencia un <em>locus</em> diploide, entonces:</p>
+<p><span class="math display">\[\begin{equation}
+A=\sum_{i=1,j=1}^{i=2,j=n}A_{i,j}
+\end{equation}\]</span></p>
+<ul>
+<li>El <strong>efecto o desvío de dominancia</strong> expresa el desvío de cada fenotipo respecto a su valor aditivo. La dominancia es un efecto intra-locus que depende de la combinación específica de alelos en cada uno de los <em>loci</em>. Si llamamos <span class="math inline">\(l\)</span> a la combinación específica que tiene nuestro individuo en cada <em>locus</em>, podemos escribir el efecto total de dominancia como:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+D=\sum_{j=1}^{n}D_{l,j}
+\end{equation}\]</span></p>
+<ul>
+<li>Los <strong>efectos o desvíos epistáticos</strong> se corresponden a interacciones alélicas inter-génicas, es decir, entre distintos <em>loci</em>. Las causas más usuales a nivel molecular para estos efectos son la pleiotropía y el ligamiento. Este efecto corresponde a la suma de todas las interaciones entre los <em>loci</em> y podemos resumirlo mediante el término <span class="math inline">\(I\)</span>:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+I=I_{AA}+I_{AD}+I_{DD}+I_{AAA}+I_{AAD}+...
+\end{equation}\]</span></p>
+</div>
+<hr />
+<p><br />
+</p>
+</div>
+<div id="modelo-genético-básico-un-locus-con-dos-alelos" class="section level2" number="8.3">
+<h2><span class="header-section-number">8.3</span> Modelo Genético Básico: un <em>locus</em> con dos alelos</h2>
+<div id="media-de-la-población" class="section level3 unnumbered">
+<h3>Media de la población</h3>
+<div class="graybox">
+<ul>
+<li><p>Los <strong>genes de efecto mayor</strong> son aquellos en que algunas o todas las variantes (alelos) marcan una diferencia importante en el fenotipo, son relativamente escasos en la genética cuantitativa.</p></li>
+<li><p>Si consideramos que los valores de los genotipos son independientes de otro tipo de información genómica y que la distribución de valores fenotípicos alrededor de cada valor genotípico es la misma (una distribución normal producto de la variabilidad ambiental), entonces las medias de los fenotipos de cada clase se corresponderá con el consiguiente valor genotípico.</p></li>
+<li><p>Podemos transformar de escala los valores genotípicos, ubicándolos en torno a cero (la media de los homocigotas en la escala orginal), para trabajar con un parámetro menos en nuestros cálculos.</p></li>
+<li><p>Los valores de los tres genotipos transformados serán:</p></li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\begin{split}
+A_1A_1=\frac{G_{11}-G_{22}}{2}=a\\
+A_1A_2=\frac{2G_{12}-G_{11}-G_{22}}{2}=d\\
+A_2A_2=\frac{G_{22}-G_{11}}{2}=-a
+\end{split}
+\end{equation}\]</span></p>
+<ul>
+<li>Usando los valores transformados, podremos entonces calcular la media de la población como:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+M=a(p-q)+2pqd
+\end{equation}\]</span></p>
+</div>
+<hr />
+<p><br />
+</p>
+</div>
+</div>
+<div id="efecto-medio" class="section level2" number="8.4">
+<h2><span class="header-section-number">8.4</span> Efecto medio</h2>
+<div class="graybox">
+<p>-En una población que posee dos alelos <span class="math inline">\(A_1\)</span> y <span class="math inline">\(A_2\)</span>, el <strong>efecto medio</strong> del alelo <span class="math inline">\(A_1\)</span>, que llamaremos <span class="math inline">\(\alpha_1\)</span>, es <span class="math inline">\(\alpha_1=q\alpha\)</span>. Como contraparte, el <strong>efecto medio</strong> del alelo <span class="math inline">\(A_2\)</span>, que llamaremos <span class="math inline">\(\alpha_2\)</span>, es <span class="math inline">\(\alpha_2=-p[a+d(q-p)]=-p\alpha\)</span>.</p>
+<ul>
+<li>El efecto medio de la sustitución de un alelo por otro (cuando tenemos dos alelos en un gen) será <span class="math inline">\(\alpha_1 - \alpha_2=q \alpha - [-p \alpha]=q \alpha + p \alpha = \alpha (p+q)\)</span>, es decir <span class="math inline">\(\alpha\)</span>.</li>
+</ul>
+</div>
+<hr />
+<p><br />
+</p>
+</div>
+<div id="valor-reproductivo-o-valor-de-cría" class="section level2" number="8.5">
+<h2><span class="header-section-number">8.5</span> Valor reproductivo (o valor de cría)</h2>
+<div class="graybox">
+<ul>
+<li><p>El <strong>valor de cría</strong> es un estimador del mérito genético de un animal. El mismo se expresa como desvío de la media de la población, y como esta depende de las frecuencias de los alelos, entonces los mismos son específicos a una población de referencia.</p></li>
+<li><p>Dado que en cada <em>locus</em> un individuo puede únicamente tener dos alelos (que denominaremos <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span> haciendo referencia al lugar del locus que ocupan), y usando la letra <span class="math inline">\(k\)</span> para los <span class="math inline">\(n\)</span> <em>loci</em> que influencian la característica de interés:</p></li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+A=\sum_{k=1}^n \alpha_{k,1} + \sum_{k=1}^n \alpha_{k,2} = \sum_{j=1,k=1}^{j=2,k=n} \alpha_{k,j}
+\end{equation}\]</span></p>
+<p>-El <strong>valor de cría</strong> será la suma de los efectos medios de los alelos presentes en cada uno de los <em>loci</em>.</p>
+</div>
+<hr />
+<p><br />
+</p>
+</div>
+<div id="desvío-de-dominancia" class="section level2" number="8.6">
+<h2><span class="header-section-number">8.6</span> Desvío de dominancia</h2>
+<div class="graybox">
+<ul>
+<li><p>Podemos modelar la interacción entre alelos del mismos locus como un desvío de los valores genotípicos respecto a los valores de cría (o valores aditivos). Por lo tanto si <span class="math inline">\(d=0\)</span>, los valores genotípicos serán iguales a los valores reproductivos.</p></li>
+<li><p>Los <strong>desvíos de dominancia</strong> correspondientes a los genotipos <span class="math inline">\(A_1A_1\)</span>, <span class="math inline">\(A_1A_2\)</span> y <span class="math inline">\(A_2A_2\)</span> serán <span class="math inline">\(-2q^2d\)</span>, <span class="math inline">\(2pqd\)</span> y <span class="math inline">\(-2p^2d\)</span> respectivamente.</p></li>
+<li><p>Al igual que los valores reproductivos, los desvíos de dominancia también dependen de las frecuencias de los alelos, así como de los valores de <span class="math inline">\(a\)</span> y <span class="math inline">\(d\)</span>, por lo que son específicos de cada población.</p></li>
+<li><p>Por construcción y bajo apareamiento al azar, no existe correlación entre los valores de cría de los genotipos y los desvíos de dominancia.</p></li>
+</ul>
+</div>
+<hr />
+<p><br />
+</p>
+</div>
+<div id="la-varianza-en-el-modelo-genético-básico" class="section level2" number="8.7">
+<h2><span class="header-section-number">8.7</span> La Varianza en el modelo genético básico</h2>
+<div id="componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos" class="section level3 unnumbered">
+<h3>Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</h3>
+<div class="graybox">
+<ul>
+<li><p>Podemos descomponer el modelo genético básico en términos de varianza de la siguiente manera:
+<span class="math inline">\(V_P={V}(G+E+I_{GxE})=(V_A+V_D+V_I)+V_E+V_{GxE}+2{Cov}_{GE}\)</span>.</p></li>
+<li><p>En el caso de características gobernadas por un gen de efecto mayor podemos expresar la varianza genética como:
+<span class="math inline">\(V_G=2pq\alpha^2+(2pqd)^2=2pq[a+d(q-p)]^2+(2pqd)^2\)</span></p></li>
+</ul>
+</div>
+<hr />
+<p><br />
+</p>
+</div>
+<div id="la-varianza-ambiental" class="section level3 unnumbered">
+<h3>La varianza ambiental</h3>
+<div class="graybox">
+<p>-En general, utilizamos el término <strong>varianza ambiental</strong> para describir de manera genérica todo aquello que no este englobado en lo genético.</p>
+<ul>
+<li>Podemos descomponer la varianza ambiental en permanente (V_{Ep}) y temporal (V_{Et}), dependiendo si los fenómenos afectan al organismo en un registro o si lo afectarán durante toda su vida.</li>
+</ul>
+<p>-Respecto a los <strong>efectos epistáticos</strong>, podemos distinguir tres tipos de variaciones entre 2 <em>loci</em>: interacciones entre los efectos aditivos en cada <em>loci</em>, interacciones entre efectos aditivos en un locus y los efectos de dominancia en el otro locus, e interacciones entre efectos de dominancia en ambos loci.</p>
+</div>
+<hr />
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="microbial.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="parentesco.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/08-modelogenbasQRG-rnvp.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["ApuntesGeneticaII.pdf", "ApuntesGeneticaII.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
