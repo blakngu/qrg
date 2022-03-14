@@ -28,7 +28,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-03-02" />
+<meta name="date" content="2022-03-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -122,6 +122,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.3" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#tres-o-más-alelos"><i class="fa fa-check"></i><b>2.3</b> Tres o más alelos</a></li>
 <li class="chapter" data-level="2.4" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#dónde-se-esconden-los-alelos-recesivos"><i class="fa fa-check"></i><b>2.4</b> ¿Dónde se “esconden” los alelos recesivos?</a></li>
 <li class="chapter" data-level="2.5" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#hardy-weinberg-en-especies-poliploides"><i class="fa fa-check"></i><b>2.5</b> Hardy-Weinberg en especies poliploides</a></li>
+<li class="chapter" data-level="2.6" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#la-estimación-de-frecuencias-en-el-locus-abo"><i class="fa fa-check"></i><b>2.6</b> La estimación de frecuencias en el locus ABO</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
 <ul>
@@ -338,7 +339,7 @@ generación de apareamiento y por lo tanto, como este razonamiento se
 puede extender a la próxima generación también, no cambiará nunca
 (mientras no intervengan otras fuerzas evolutivas como la selección
 o la deriva y el apareamiento sea al azar).</p></li>
-<li><p>Las frecuencias de los genotipos quedan completamente determinados
+<li><p>Las frecuencias de los genotipos quedan completamente determinadas
 por la frecuencia de los alelos en la generación previa (porque son
 las frecuencias de los gametos, haploides) y en el caso particular
 de nuestro modelo de un locus con dos alelos, todo queda determinado
@@ -438,11 +439,47 @@ de distinguir de los homocigotas con el alelo favorable.</li>
 <ul>
 <li><p>Por ejemplo, en el caso del tetraploides hay 4 multiplicaciones de las frecuencias de los alelos <strong>A</strong> y <strong>a</strong>, por lo que ahora, la distribución de las frecuencias de los distintos genotipos será <span class="math inline">\((p+q)^4\)</span>.</p></li>
 <li><p>Esto es generalizable a otras ploidias, al menos a las pares de acuerdo a
-<span class="math inline">\((f_{\bf{A}}+f_{\bf{a}})*...*(f_{\bf{A}}+f_{\bf{a}}))=(p+q)*...*(p+q)=(p+q)^n\)</span></p></li>
+<span class="math inline">\((f_{\bf{A}}+f_{\bf{a}})*...*(f_{\bf{A}}+f_{\bf{a}})=(p+q)*...*(p+q)=(p+q)^n\)</span></p></li>
 </ul>
+</div>
+<p><br />
+</p>
+</div>
+<div id="la-estimación-de-frecuencias-en-el-locus-abo" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> La estimación de frecuencias en el locus ABO</h2>
+<div class="graybox">
+<ul>
+<li>Los métodos elaborados para la estimación de las frecuencias hacen uso del concepto de máxima verosimilitud, pero <span class="citation"><a href="#ref-pmid6598211" role="doc-biblioref">Yasuda</a> (<a href="#ref-pmid6598211" role="doc-biblioref">1984</a>)</span> propuso un método sencillo basado en conteo. Supongamos que <span class="math inline">\(T=A+B+AB+O\)</span>, es decir el total de individuos de los distintos fenotipos, el estimador basado en conteo es:</li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+\hat{p}=\frac{[(1/2)AB+A+O-\sqrt{O(A+O)}]}{T}
+\end{equation}\]</span></p>
+<p>Analogamente, por simetría, para la estimación de <span class="math inline">\(q\)</span> tenemos</p>
+<p><span class="math display">\[\begin{equation}
+\hat{q}=\frac{[(1/2)AB+B+O-\sqrt{O(B+O)}]}{T}
+\end{equation}\]</span></p>
+<p>y por lo tanto,</p>
+<p><span class="math display">\[\begin{equation}
+\hat{r}=1-\hat{p}-\hat{q}
+\end{equation}\]</span></p>
+<ul>
+<li>El número esperado de cada fenotipo es:</li>
+</ul>
+<p><span class="math display">\[\begin{equation*}
+E(A)=(p^2+2pr)T\\
+E(B)=(q^2+2qr)T\\
+E(AB)=2pqT\\
+E(O)=r^2T
+\end{equation*}\]</span></p>
 </div>
 <hr />
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-pmid6598211" class="csl-entry">
+Yasuda, N. 1984. <span>“<span class="nocase"><span>A</span> note on gene frequency estimation in the <span>A</span><span>B</span><span>O</span> and <span>A</span><span>B</span><span>O</span>-like system</span>.”</span> <em>Jinrui Idengaku Zasshi</em> 29 (3): 371–80.
 </div>
 </div>
             </section>
