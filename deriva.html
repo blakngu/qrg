@@ -28,7 +28,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-03-02" />
+<meta name="date" content="2022-03-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -122,6 +122,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.3" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#tres-o-más-alelos"><i class="fa fa-check"></i><b>2.3</b> Tres o más alelos</a></li>
 <li class="chapter" data-level="2.4" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#dónde-se-esconden-los-alelos-recesivos"><i class="fa fa-check"></i><b>2.4</b> ¿Dónde se “esconden” los alelos recesivos?</a></li>
 <li class="chapter" data-level="2.5" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#hardy-weinberg-en-especies-poliploides"><i class="fa fa-check"></i><b>2.5</b> Hardy-Weinberg en especies poliploides</a></li>
+<li class="chapter" data-level="2.6" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#la-estimación-de-frecuencias-en-el-locus-abo"><i class="fa fa-check"></i><b>2.6</b> La estimación de frecuencias en el locus ABO</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
 <ul>
@@ -344,7 +345,13 @@ div.csl-indent {
 <li><p>El modelo de <strong>Wright-Fisher</strong> asume que de un <strong>pool infinito</strong> de gametos, con las frecuencias de los alelos proporcionales a lo muestreado para constituir la generación anterior, muestreamos nuevamente <span class="math inline">\(2N\)</span> alelos, que será mi nueva población.</p></li>
 <li><p>La suposición de un <strong>pool infinito</strong> de gametos es equivalente, desde el punto de vista matemático a un muestreo con reposición.</p></li>
 <li><p>Al generarse la nueva población a partir de <span class="math inline">\(2N\)</span> muestreos independientes de Bernoulli, la distribución de la nueva población será una Binomial con probabilidad <span class="math inline">\(p\)</span> y tamaño <span class="math inline">\(2N\)</span>.</p></li>
-<li><p>La varianza de las frecuencias del alelo <strong>A</strong> (<span class="math inline">\(p\)</span>) entre poblaciones, <strong>por generación</strong>, debida al efecto de la deriva genética es:</p></li>
+<li><p>Si una población tiene <span class="math inline">\(i\)</span> copias del alelo <span class="math inline">\(A\)</span> y <span class="math inline">\(2N-i\)</span> copias del alelo <span class="math inline">\(a\)</span>, la probabilidad de transición de pasar de <span class="math inline">\(i\)</span> copias a <span class="math inline">\(j\)</span> copias en el modelo de Wright-Fisher se encuentra dada por la siguiente ecuación:</p></li>
+</ul>
+<p><span class="math display">\[\begin{equation}
+T_{ij}={2N \choose j}\left(\frac{i}{2N}\right)^{j}\left(\frac{2N-i}{2N}\right)^{2N-j}=\frac{(2N)!}{j!(2N-j)!}p^jq^{2N-j}
+\end{equation}\]</span></p>
+<ul>
+<li>La varianza de las frecuencias del alelo <strong>A</strong> (<span class="math inline">\(p\)</span>) entre poblaciones, <strong>por generación</strong>, debida al efecto de la deriva genética es:</li>
 </ul>
 <p><span class="math display" id="eq:varWFpergen">\[\begin{equation*}
 \sigma^2(p)=\frac{pq}{2N_e}=\frac{p-p^2}{2N_e}
@@ -422,8 +429,7 @@ N_e^v=\frac{pq}{2 Var(\Delta p)}
 </div>
 <p>Bajo la condición de que la deriva sea la única fuerza evolutiva actuando, en una población de <span class="math inline">\(N\)</span> individuos diploides, en un <em>locus</em> con dos alelos:</p>
 <ul>
-<li><p>La <strong>probabilidad de fijación</strong> de un alelo es igual a su frecuencia <span class="math inline">\(p\)</span></p></li>
-<li><p>La ecuación hacia adelante de Kolmogorov (<strong>KFE</strong>) analiza el comportamiento de la función de densidad de probabilidad <span class="math inline">\(\phi(p,x,t)\)</span>, es decir la distribución de las frecuencias alélicas <span class="math inline">\(x\)</span>, a medida de que avanza el tiempo y tiene la siguiente forma</p></li>
+<li>La ecuación hacia adelante de Kolmogorov (<strong>KFE</strong>) analiza el comportamiento de la función de densidad de probabilidad <span class="math inline">\(\phi(p,x,t)\)</span>, es decir la distribución de las frecuencias alélicas <span class="math inline">\(x\)</span>, a medida de que avanza el tiempo y tiene la siguiente forma</li>
 </ul>
 <p><span class="math display">\[\begin{equation*}
 \frac{\partial \phi(p,x,t)}{\partial t}=-\frac{\partial [M(x)\phi(p,x,t)]}{\partial x}+\frac{1}{2}\frac{\partial^2[V(x)\phi(p,x,t)]}{\partial x^2}
@@ -444,7 +450,7 @@ N_e^v=\frac{pq}{2 Var(\Delta p)}
 <div class="graybox">
 <p>Bajo la condición de que la deriva sea la única fuerza evolutiva actuando, en una población de <span class="math inline">\(N\)</span> individuos diploides, en un <em>locus</em> con dos alelos:</p>
 <ul>
-<li><p>La <strong>probabilidad de fijación</strong> de un alelo es igual a su frecuencia <span class="math inline">\(p\)</span></p></li>
+<li><p>La <strong>probabilidad de fijación</strong> de un alelo es igual a su frecuencia <span class="math inline">\(p=\frac{1}{2N}\)</span></p></li>
 <li><p>El <strong>tiempo a la eventual fijación</strong> de ese alelo es <span class="math inline">\(\bar{t_1}(p)=-4N \frac{(1-p) \ln(1-p)}{p}\)</span></p></li>
 <li><p>La <strong>probabilidad de perder un alelo</strong> es igual a <span class="math inline">\(1-p\)</span></p></li>
 <li><p>El <strong>tiempo a la eventual pérdida</strong> de ese alelo es <span class="math inline">\(\bar{t_0}(p)=-4N \frac{(p) \ln(p)}{(1-p)}\)</span></p></li>
@@ -470,6 +476,10 @@ N_e^v=\frac{pq}{2 Var(\Delta p)}
 <p><span class="math display">\[\begin{equation*}
 \mathbb{E}(u_k)=\frac{4N}{k(k-1)}
 \end{equation*}\]</span></p>
+<p>Mientras que para el tiempo total se puede aplicar:</p>
+<p><span class="math display">\[\begin{equation}
+t=4N(1-\frac{1}{k})
+\end{equation}\]</span></p>
 <ul>
 <li><p>Como además en cada evento de coalescencia <span class="math inline">\(k\)</span> se reduce en uno, los tiempos hacia atrás serán cada vez más largos.</p></li>
 <li><p>El tamaño poblacional juega un papel muy importante en los tiempos de coalescencia (está en el numerador de la esperanza), por lo que si el mismo varía a lo largo del tiempo entonces no se cumple uno de los supuestos fundamentales del coalescente. Sin embargo, en los casos en que el tamaño poblacional es una función del tiempo cuya inversa sea integrable, es posible aplicar una transformación del tiempo tal que se puede trabajar en esta escala temporal ficticia con el coalescente sin modificar.</p></li>
