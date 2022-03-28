@@ -28,7 +28,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-03-02" />
+<meta name="date" content="2022-03-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -122,6 +122,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.3" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#tres-o-más-alelos"><i class="fa fa-check"></i><b>2.3</b> Tres o más alelos</a></li>
 <li class="chapter" data-level="2.4" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#dónde-se-esconden-los-alelos-recesivos"><i class="fa fa-check"></i><b>2.4</b> ¿Dónde se “esconden” los alelos recesivos?</a></li>
 <li class="chapter" data-level="2.5" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#hardy-weinberg-en-especies-poliploides"><i class="fa fa-check"></i><b>2.5</b> Hardy-Weinberg en especies poliploides</a></li>
+<li class="chapter" data-level="2.6" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#la-estimación-de-frecuencias-en-el-locus-abo"><i class="fa fa-check"></i><b>2.6</b> La estimación de frecuencias en el locus ABO</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
 <ul>
@@ -145,13 +146,11 @@ div.csl-indent {
 <li class="chapter" data-level="4.2" data-path="seleccion.html"><a href="seleccion.html#diferentes-formas-de-selección"><i class="fa fa-check"></i><b>4.2</b> Diferentes formas de selección</a>
 <ul>
 <li class="chapter" data-level="4.2.1" data-path="seleccion.html"><a href="seleccion.html#selección-direccional"><i class="fa fa-check"></i><b>4.2.1</b> Selección direccional</a></li>
-<li class="chapter" data-level="4.2.2" data-path="seleccion.html"><a href="seleccion.html#selección-disruptiva"><i class="fa fa-check"></i><b>4.2.2</b> Selección disruptiva</a></li>
+<li class="chapter" data-level="4.2.2" data-path="seleccion.html"><a href="seleccion.html#selección-estabilizadora"><i class="fa fa-check"></i><b>4.2.2</b> Selección estabilizadora</a></li>
+<li class="chapter" data-level="4.2.3" data-path="seleccion.html"><a href="seleccion.html#selección-disruptiva"><i class="fa fa-check"></i><b>4.2.3</b> Selección disruptiva</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="seleccion.html"><a href="seleccion.html#el-teorema-fundamental-de-la-selección-natural"><i class="fa fa-check"></i><b>4.3</b> El teorema fundamental de la selección natural</a></li>
-<li class="chapter" data-level="4.4" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-mutación"><i class="fa fa-check"></i><b>4.4</b> Equilibrio selección-mutación</a>
-<ul>
-<li class="chapter" data-level="4.4.1" data-path="seleccion.html"><a href="seleccion.html#el-principio-de-haldane-muller"><i class="fa fa-check"></i><b>4.4.1</b> El principio de Haldane-Muller</a></li>
-</ul></li>
+<li class="chapter" data-level="4.4" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-mutación"><i class="fa fa-check"></i><b>4.4</b> Equilibrio selección-mutación</a></li>
 <li class="chapter" data-level="4.5" data-path="seleccion.html"><a href="seleccion.html#la-fuerza-de-la-selección-natural"><i class="fa fa-check"></i><b>4.5</b> La fuerza de la selección natural</a></li>
 <li class="chapter" data-level="4.6" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-deriva"><i class="fa fa-check"></i><b>4.6</b> Equilibrio selección-deriva</a></li>
 <li class="chapter" data-level="4.7" data-path="seleccion.html"><a href="seleccion.html#otros-tipos-de-selección-y-complejidades"><i class="fa fa-check"></i><b>4.7</b> Otros tipos de selección y complejidades</a></li>
@@ -330,11 +329,99 @@ div.csl-indent {
 <h2><span class="header-section-number">4.1</span> Selección natural en el modelo de un locus con dos alelos</h2>
 <div class="graybox">
 <ul>
-<li>el <strong>fitness medio</strong> de una población esta dado por</li>
+<li>La frecuencia del genotipo <span class="math inline">\(A_iA_j\)</span> después de la selección estará dada por el producto de su frecuencia antes de la selección, multiplicada por el <strong>filtro</strong> <span class="math inline">\(w_{ij}\)</span> y divido por el <strong>fitness medio</strong>, de forma que el <strong>fitness relativo</strong> de cada genotipo, ponderado por su frecuencia, sume a uno:</li>
 </ul>
+<table>
+<colgroup>
+<col width="41%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Genotipo</th>
+<th align="center"><span class="math inline">\(\bf{A_1A_1}\)</span></th>
+<th align="center"><span class="math inline">\(\bf{A_1A_2}\)</span></th>
+<th align="center"><span class="math inline">\(\bf{A_2A_2}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Frecuencia</td>
+<td align="center"><span class="math inline">\(p^2\)</span></td>
+<td align="center"><span class="math inline">\(2pq\)</span></td>
+<td align="center"><span class="math inline">\(q^2\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Viabilidad</td>
+<td align="center"><span class="math inline">\(w_{11}\)</span></td>
+<td align="center"><span class="math inline">\(w_{12}\)</span></td>
+<td align="center"><span class="math inline">\(w_{22}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Frecuencia post-selección</td>
+<td align="center"><span class="math inline">\(p^2w_{11}\)</span></td>
+<td align="center"><span class="math inline">\(2pqw_{12}\)</span></td>
+<td align="center"><span class="math inline">\(q^2w_{22}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Frecuencia relativa post-selección</td>
+<td align="center"><span class="math inline">\(\frac{p^2w_{11}}{\bar{w}}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{2pqw_{12}}{\bar{w}}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{q^2w_{22}}{\bar{w}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Por lo que el <strong>fitness medio</strong> de una población esta dado por</p>
 <p><span class="math display">\[\begin{equation}
 \bar{w}=p^2w_{11}+2pqw_{12}+q^2w_{22}
 \end{equation}\]</span></p>
+<ul>
+<li>Si llamamos <span class="math inline">\(s\)</span> al <strong>coeficiente de selección</strong> (la intensidad de la misma) contra el genotipo <span class="math inline">\(A_2A_2\)</span> (sin pérdida de generalidad, ya que la designación de los alelos <span class="math inline">\(A_1\)</span> y <span class="math inline">\(A_2\)</span> es completamente arbitraria y podemos elegir a nuestro gusto cuál es uno y cuál el otro) y definimos un parámetro <span class="math inline">\(h\)</span> de tal forma de poder acomodar libremente los valores de <strong>fitness</strong> de los heterocigotos, tenemos que los nuevos fitness relativos estarán dados ahora por</li>
+</ul>
+<table>
+<colgroup>
+<col width="41%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Genotipo</th>
+<th align="center"><span class="math inline">\(\bf{A_1A_1}\)</span></th>
+<th align="center"><span class="math inline">\(\bf{A_1A_2}\)</span></th>
+<th align="center"><span class="math inline">\(\bf{A_2A_2}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Frecuencia</td>
+<td align="center"><span class="math inline">\(p^2\)</span></td>
+<td align="center"><span class="math inline">\(2pq\)</span></td>
+<td align="center"><span class="math inline">\(q^2\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Viabilidad</td>
+<td align="center"><span class="math inline">\(w_{11}\)</span></td>
+<td align="center"><span class="math inline">\(w_{12}\)</span></td>
+<td align="center"><span class="math inline">\(w_{22}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Viabilidad relativa</td>
+<td align="center"><span class="math inline">\(\frac{w_{11}}{w_{11}}=1\)</span></td>
+<td align="center"><span class="math inline">\(\frac{w_{12}}{w_{11}}\)</span></td>
+<td align="center"><span class="math inline">\(\frac{w_{22}}{w_{11}}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Fitness relativo (forma <span class="math inline">\(h\)</span> y <span class="math inline">\(s\)</span>)</td>
+<td align="center"><span class="math inline">\(1\)</span></td>
+<td align="center"><span class="math inline">\(1-hs\)</span></td>
+<td align="center"><span class="math inline">\(1-s\)</span></td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li>El cambio en la frecuencia del alelo <span class="math inline">\(A_1\)</span> debido a la selección en un locus con dos alelos, luego de una generación es igual a</li>
 </ul>
@@ -365,8 +452,9 @@ div.csl-indent {
 <hr />
 <p><br />
 </p>
-<div id="otra-parametrización" class="section level4" number="4.2.1.1">
-<h4><span class="header-section-number">4.2.1.1</span> Otra parametrización**</h4>
+</div>
+<div id="selección-estabilizadora" class="section level3" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Selección estabilizadora</h3>
 <div class="graybox">
 <ul>
 <li><p>Bajo el efecto de la <strong>sobredominancia</strong>, es decir con el <strong>efecto de los heterocigotos</strong> <span class="math inline">\(h&lt;0\)</span> y para <strong>coeficientes de selección</strong> no nulos, <span class="math inline">\(s&gt;0\)</span> (es decir, <span class="math inline">\(w_{11}&gt;w_{22}\)</span>), entonces existirá un punto de equilibrio <strong>estable</strong> en el intervalo de frecuencias <span class="math inline">\(0&lt;p&lt;1\)</span>.</p></li>
@@ -376,7 +464,7 @@ div.csl-indent {
 \hat{p}=\frac{h-1}{2h-1}
 \end{equation}\]</span></p>
 <ul>
-<li><p>El anterior se trata de un punto de equilibrio estable ya que la selección a ambos lados es hacia ese punto y cualquier perturbación aleatoria de la frecuencia a los lados no hará más que activar la selección nuevamente hacia el punto de equilibrio (<span class="math inline">\(\Delta_s p\)</span> lleva siempre <span class="math inline">\(p \to \hat{p}\)</span>).</p></li>
+<li><p>El anterior se trata de un punto de equilibrio <strong>estable</strong> ya que la selección a ambos lados es hacia ese punto y cualquier perturbación aleatoria de la frecuencia a los lados no hará más que activar la selección nuevamente hacia el punto de equilibrio (<span class="math inline">\(\Delta_s p\)</span> lleva siempre <span class="math inline">\(p \to \hat{p}\)</span>).</p></li>
 <li><p>Por lo anterior, a la selección bajo el modo de acción génica de <strong>sobredominancia</strong> se le conoce como <strong>selección estabilizadora</strong>.</p></li>
 <li><p>En el caso de usar la parametrización alternativa, con <span class="math inline">\(1-t\)</span> y <span class="math inline">\(1-s\)</span> como <strong>fitness relativo</strong> para los homocigotos <span class="math inline">\(A_1A_1\)</span> y <span class="math inline">\(A_2A_2\)</span> respectivamente, el punto de equilibrio en la frecuencia del alelo <span class="math inline">\(A_1\)</span>, <span class="math inline">\(\hat{p}\)</span>, estará dado por</p></li>
 </ul>
@@ -388,9 +476,8 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-</div>
-<div id="selección-disruptiva" class="section level3" number="4.2.2">
-<h3><span class="header-section-number">4.2.2</span> Selección disruptiva</h3>
+<div id="selección-disruptiva" class="section level3" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Selección disruptiva</h3>
 <div class="graybox">
 <ul>
 <li><p>Bajo el efecto de la <strong>subdominancia</strong>, es decir con el <strong>efecto de los heterocigotos</strong> <span class="math inline">\(h&gt;1\)</span> y para <strong>coeficientes de selección</strong> no nulos, <span class="math inline">\(s&gt;0\)</span> (es decir, <span class="math inline">\(w_{11}&gt;w_{22}\)</span>), entonces existirá un punto de equilibrio <strong>inestable</strong> en el intervalo de frecuencias <span class="math inline">\(0&lt;p&lt;1\)</span>.</p></li>
@@ -433,7 +520,7 @@ div.csl-indent {
 \end{equation}\]</span>
 es decir, <span class="math inline">\(\Delta_s p\)</span> es el producto de un término referido a la varianza genética por un término que es la tasa de cambio del <strong>fitness medio</strong> relativo.</p>
 <ul>
-<li>El <strong>teorema fundamental de la selección natural</strong>, debido a <span class="citation"><a href="#ref-Fisher1930" role="doc-biblioref">Fisher</a> (<a href="#ref-Fisher1930" role="doc-biblioref">1930</a>)</span>, establece que “La tasa de aumento de la aptitud media de cualquier organismo, en cualquier momento, que es atribuible a la selección natural que actúa a través de los cambios en las frecuencias de los genes, es exactamente igual a su varianza genética en la aptitud en ese momento” (<span class="citation"><a href="#ref-Edwards1994" role="doc-biblioref">Edwards</a> (<a href="#ref-Edwards1994" role="doc-biblioref">1994</a>)</span>)</li>
+<li>El <strong>teorema fundamental de la selección natural</strong>, debido a <span class="citation"><a href="#ref-Fisher1930" role="doc-biblioref">Fisher</a> (<a href="#ref-Fisher1930" role="doc-biblioref">1930</a>)</span>, establece que “La tasa de aumento de la aptitud media de cualquier organismo, en cualquier momento, que es atribuible a la selección natural que actúa a través de los cambios en las frecuencias de los genes, es exactamente igual a su varianza genética en la aptitud en ese momento” (<span class="citation"><a href="#ref-Edwards1994" role="doc-biblioref">Edwards</a> (<a href="#ref-Edwards1994" role="doc-biblioref">1994</a>)</span>).</li>
 </ul>
 </div>
 <hr />
@@ -442,8 +529,6 @@ es decir, <span class="math inline">\(\Delta_s p\)</span> es el producto de un t
 </div>
 <div id="equilibrio-selección-mutación" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Equilibrio selección-mutación</h2>
-<div id="el-principio-de-haldane-muller" class="section level3" number="4.4.1">
-<h3><span class="header-section-number">4.4.1</span> El principio de Haldane-Muller</h3>
 <div class="graybox">
 <ul>
 <li>En nuestro modelo de un <em>locus</em> con dos alelos, con <strong>dominancia incompleta</strong>, asumiendo que la fuerza de selección contra el alelo <span class="math inline">\(A_2\)</span> consigue mantener la frecuencia del mismo muy baja (y por lo tanto <span class="math inline">\(q \approx 0\)</span>), si los alelos <span class="math inline">\(A_2\)</span> se reintroducen con una tasa <span class="math inline">\(u\)</span>, entonces el balance entre la mutación y la selección está dado aproximadamente por</li>
@@ -455,7 +540,7 @@ es decir, <span class="math inline">\(\Delta_s p\)</span> es el producto de un t
 <li>En el caso de que <span class="math inline">\(h=0\)</span>, es decir cuando <span class="math inline">\(A_1\)</span> es dominante sobre <span class="math inline">\(A_2\)</span>, entonces una aproximación razonable a la frecuencia de equilibrio está dada por</li>
 </ul>
 <p><span class="math display">\[\begin{equation} 
-\hat{q} \approx \sqrt{\frac{u}{hs}}
+\hat{q} \approx \sqrt{\frac{u}{s}}
 \end{equation}\]</span></p>
 <ul>
 <li><strong>Principio de Haldane-Muller</strong>: cuando <span class="math inline">\(0 \le h&lt;1\)</span>, la reducción en el <strong>fitness medio</strong> es independiente del efecto del coeficiente de selección. La <strong>carga mutacional</strong>, es decir la pérdida en fitness de la población, es solo proporcional a la tasa de mutación (<span class="math inline">\(L=w_{max}-\bar{w}=u\)</span> en el caso de dominancia completa, <span class="math inline">\(L=w_{max}-\bar{w}=2u\)</span> en el caso de dominancia incompleta).</li>
@@ -464,7 +549,6 @@ es decir, <span class="math inline">\(\Delta_s p\)</span> es el producto de un t
 <hr />
 <p><br />
 </p>
-</div>
 </div>
 <div id="la-fuerza-de-la-selección-natural" class="section level2" number="4.5">
 <h2><span class="header-section-number">4.5</span> La fuerza de la selección natural</h2>
@@ -576,7 +660,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-seleccionQRG-RNVP.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-seleccionQRG.Rmd",
 "text": "Edit"
 },
 "history": {
