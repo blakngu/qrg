@@ -28,7 +28,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-03-02" />
+<meta name="date" content="2022-06-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -122,6 +122,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.3" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#tres-o-más-alelos"><i class="fa fa-check"></i><b>2.3</b> Tres o más alelos</a></li>
 <li class="chapter" data-level="2.4" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#dónde-se-esconden-los-alelos-recesivos"><i class="fa fa-check"></i><b>2.4</b> ¿Dónde se “esconden” los alelos recesivos?</a></li>
 <li class="chapter" data-level="2.5" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#hardy-weinberg-en-especies-poliploides"><i class="fa fa-check"></i><b>2.5</b> Hardy-Weinberg en especies poliploides</a></li>
+<li class="chapter" data-level="2.6" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#la-estimación-de-frecuencias-en-el-locus-abo"><i class="fa fa-check"></i><b>2.6</b> La estimación de frecuencias en el locus ABO</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
 <ul>
@@ -145,13 +146,11 @@ div.csl-indent {
 <li class="chapter" data-level="4.2" data-path="seleccion.html"><a href="seleccion.html#diferentes-formas-de-selección"><i class="fa fa-check"></i><b>4.2</b> Diferentes formas de selección</a>
 <ul>
 <li class="chapter" data-level="4.2.1" data-path="seleccion.html"><a href="seleccion.html#selección-direccional"><i class="fa fa-check"></i><b>4.2.1</b> Selección direccional</a></li>
-<li class="chapter" data-level="4.2.2" data-path="seleccion.html"><a href="seleccion.html#selección-disruptiva"><i class="fa fa-check"></i><b>4.2.2</b> Selección disruptiva</a></li>
+<li class="chapter" data-level="4.2.2" data-path="seleccion.html"><a href="seleccion.html#selección-estabilizadora"><i class="fa fa-check"></i><b>4.2.2</b> Selección estabilizadora</a></li>
+<li class="chapter" data-level="4.2.3" data-path="seleccion.html"><a href="seleccion.html#selección-disruptiva"><i class="fa fa-check"></i><b>4.2.3</b> Selección disruptiva</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="seleccion.html"><a href="seleccion.html#el-teorema-fundamental-de-la-selección-natural"><i class="fa fa-check"></i><b>4.3</b> El teorema fundamental de la selección natural</a></li>
-<li class="chapter" data-level="4.4" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-mutación"><i class="fa fa-check"></i><b>4.4</b> Equilibrio selección-mutación</a>
-<ul>
-<li class="chapter" data-level="4.4.1" data-path="seleccion.html"><a href="seleccion.html#el-principio-de-haldane-muller"><i class="fa fa-check"></i><b>4.4.1</b> El principio de Haldane-Muller</a></li>
-</ul></li>
+<li class="chapter" data-level="4.4" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-mutación"><i class="fa fa-check"></i><b>4.4</b> Equilibrio selección-mutación</a></li>
 <li class="chapter" data-level="4.5" data-path="seleccion.html"><a href="seleccion.html#la-fuerza-de-la-selección-natural"><i class="fa fa-check"></i><b>4.5</b> La fuerza de la selección natural</a></li>
 <li class="chapter" data-level="4.6" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-deriva"><i class="fa fa-check"></i><b>4.6</b> Equilibrio selección-deriva</a></li>
 <li class="chapter" data-level="4.7" data-path="seleccion.html"><a href="seleccion.html#otros-tipos-de-selección-y-complejidades"><i class="fa fa-check"></i><b>4.7</b> Otros tipos de selección y complejidades</a></li>
@@ -278,6 +277,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#blup-las-ecuaciones-del-modelo-mixto-lineal"><i class="fa fa-check"></i>BLUP: las ecuaciones del modelo mixto lineal</a></li>
 </ul></li>
+<li class="chapter" data-level="13.7" data-path="selartifII.html"><a href="selartifII.html#recordatorio-de-conceptos-vinculados-a-la-respuesta-a-la-selección"><i class="fa fa-check"></i><b>13.7</b> Recordatorio de conceptos vinculados a la Respuesta a la Selección</a></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
 <ul>
@@ -347,11 +347,11 @@ div.csl-indent {
 <ul>
 <li><p>En la <strong>selección individual</strong> la idea es utilizar la información fenotípica aportada por el individuo como criterio para la decisión sobre el valor reproductivo del mismo. Sin embargo, en situaciones donde el fenotipo individual es difícil o aún imposible de obtener, o cuando la heredabilidad de la característica es baja, aún podemos recurrir a la selección usando otras fuentes de información.</p></li>
 <li><p>El fenotipo de un individuo podemos <strong>descomponerlo en la suma de dos fuentes diferentes</strong>, una la <strong>correspondiente al desvío de la media familiar respecto a la media de la población</strong>, que llamaremos <span class="math inline">\(P_f\)</span> y otra que corresponde al <strong>desvío fenotípico del individuo respecto a la media familiar</strong>, que llamaremos <span class="math inline">\(P_w\)</span>.</p></li>
-<li><p>Cuando realizamos <strong>selección familiar</strong> la idea es darle todo el peso a <span class="math inline">\(P_f\)</span>, dejando de lado el aporte de <span class="math inline">\(P_w\)</span> y de esta manera eligiendo familias enteras como reproductores. La lógica de este tipo de selección es que <strong>los efectos ambientales tienden a cancelarse dentro de la familia</strong>, lo que llevaría a que la media fenotípica de la misma sea similar a la media genotípica. La respuesta esperada será: <span class="math inline">\({R_f=i\ \sigma_f\ h^2_f}\)</span> dónde donde <span class="math inline">\({\sigma_f}\)</span> representa el desvío estándar de las medias fenotípica familiares y <span class="math inline">\({h^2_f}\)</span> es la heredabilidad de los promedios familiares.</p></li>
+<li><p>Cuando realizamos <strong>selección familiar</strong> la idea es darle todo el peso a <span class="math inline">\(P_f\)</span>, dejando de lado el aporte de <span class="math inline">\(P_w\)</span> y de esta manera eligiendo familias enteras como reproductores. La lógica de este tipo de selección es que <strong>los efectos ambientales tienden a cancelarse dentro de la familia</strong>, lo que llevaría a que la media fenotípica de la misma sea similar a la media genotípica. La respuesta esperada será: <span class="math inline">\({R_f=i\ \sigma_f\ h^2_f}\)</span> dónde donde <span class="math inline">\({\sigma_f}\)</span> representa el desvío estándar de las medias fenotípicas familiares y <span class="math inline">\({h^2_f}\)</span> es la heredabilidad de los promedios familiares.</p></li>
 <li><p>El problema más notable de este tipo de selección es el incremento en la consanguinidad esperada en la población y la depresión endogámica consiguiente en las características que la muestren.</p></li>
-<li><p>Podemos definir la <strong>selección fraternal</strong> como un caso particular de <strong>selección familiar</strong> en el que el fenotipo del candidato no es incluido en las mediciones. En este caso, es frecuente utilizar la información proveniente de grupos de hermanos. A medida de que el número de individuos medidos por grupo se incrementa, el incluir o no el fenotipo del individuo deja de tener relevancia y los resultados de ambos tipos de selección convergen.</p></li>
+<li><p>Podemos definir la <strong>selección fraternal</strong> como un caso particular de <strong>selección familiar</strong> en el que el fenotipo del candidato no es incluido en las mediciones. En este caso, es frecuente utilizar la información proveniente de grupos de hermanos. A medida que el número de individuos medidos por grupo se incrementa, el incluir o no el fenotipo del individuo deja de tener relevancia y los resultados de ambos tipos de selección convergen.</p></li>
 <li><p>Cuando realizamos <strong>selección dentro de la familia</strong>, la idea es la opuesta a la de selección familiar, en lugar de seleccionar por la media familiar, seleccionamos por el desvío respecto a la media familiar. Este tipo de selección se aplica cuando el <strong>ambiente común familiar juega un papel muy importante en la similaridad de los individuos</strong>, entonces las diferencias respecto a la media de la familia pueden representar mejor las diferencias genéticas entre individuos. La respuesta esperada será: <span class="math inline">\({R_w=i\ \sigma_w\ h^2_w}\)</span> dónde <span class="math inline">\({R_w}\)</span> es la respuesta a la <strong>selección dentro de familias</strong>, <span class="math inline">\({\sigma_w}\)</span> es el devío estándar fenotípico de los desvíos respecto a la media familiar y <span class="math inline">\({h^2_w}\)</span> es la heredabilidad correspondiente a este tipo de selección.</p></li>
-<li><p>La idea detrás de las <strong>pruebas de progenie</strong> es evaluar el valor reproductivo a partir de los fenotipos de su progenie. Teóricamente parece una alternativa óptima a la evaluación, pero al tener que esperar que los hijos crezcan para realizar la evaluación de la característica, el <span class="math inline">\(IG\)</span>
+<li><p>La idea detrás de las <strong>pruebas de progenie</strong> es evaluar el valor reproductivo a partir de los fenotipos de su progenie. Teóricamente parece una alternativa óptima a la evaluación, pero al tener que esperar que los hijos crezcan para realizar la evaluación del candidato a la selección, el <span class="math inline">\(IG\)</span>
 se ve aumentado. Por otra parte, cuánto mas individuos evaluemos aumentaremos la precision del método pero estaremos disminuyendo la cantidad de candidatos a evaluar y por lo tanto también bajaremos la intensidad de selección.</p></li>
 <li><p>Podemos calcular la <strong>heredabilidad de la selección familiar</strong> directamente como la relación entre las varianzas aditiva y fenotípica correspondientes: <span class="math inline">\({h^2_f=\left(\frac{1+(n-1)r}{1+(n-1)t}\right)h^2}\)</span></p></li>
 <li><p>De la misma manera, la <strong>heredabilidad de las desviaciones intrafamiliares</strong> será:
@@ -378,11 +378,11 @@ y su correspondiente precisión será: <span class="math inline">\({r_{AC}=r\ h\
 <ol start="2" style="list-style-type: decimal">
 <li><p>Si disponemos de <strong>información generada a partir de la media de <span class="math inline">\({n}\)</span> individuos</strong>, relacionados entre sí de tal manera que el coeficiente de correlación intraclase sea <span class="math inline">\({t}\)</span>, la <strong>varianza del promedio</strong> será:<span class="math inline">\({Var(\bar z_i)=\sigma^2_P\left[\frac{1+(n-1)t}{n}\right]}\)</span></p></li>
 <li><p>Además, la <strong>covarianza entre dos fuentes de información que consiste cada una en una sola medida</strong>, tomadas en individuos diferentes, es igual a <span class="math inline">\({Cov(z_i,z_j)=a_{ij}\ h^2\ \sigma^2_P}\)</span></p></li>
-<li><p>Consigueintemente, la <strong>covarianza entre dos fuentes de información, una de ellas una sola medida en el candidato a la selección y la otra el promedio de </strong> <span class="math inline">\(n\)</span> <strong>medidas en individuos que tienen el mismo parentesco entre sí y también el mismo parentesco con el candidato</strong>, es igual a
+<li><p>Consiguientemente, la <strong>covarianza entre dos fuentes de información, una de ellas una sola medida en el candidato a la selección y la otra el promedio de </strong> <span class="math inline">\(n\)</span> <strong>medidas en individuos que tienen el mismo parentesco entre sí y también el mismo parentesco con el candidato</strong>, es igual a
 <span class="math inline">\({Cov(z_i,\bar z_j)=a_{ij}\ h^2\ \sigma^2_P}\)</span> siendo <span class="math inline">\({a_{ij}}\)</span> el parentesco aditivo entre el candidato y cualquiera de los integrantes del grupo a promediar (todos tienen el mismo parentesco con el candidato).</p></li>
 </ol>
 <ul>
-<li>De la misma manera, alcularemos los elementos de la matriz <span class="math inline">\(G\)</span> dependiendo de la información de la que dispongamos, tal que:</li>
+<li>De la misma manera, calcularemos los elementos de la matriz <span class="math inline">\(G\)</span> dependiendo de la información de la que dispongamos, tal que:</li>
 </ul>
 <ol style="list-style-type: decimal">
 <li><p>La covarianza entre <strong>una sola medida</strong> fenotípica y el <strong>valor de cría</strong> del individuo, está dada por <span class="math inline">\({Cov(z_i,A)=a_{ij}\ h^2\ \sigma^2_P}\)</span></p></li>
@@ -478,6 +478,7 @@ superior a <span class="math inline">\({\left(\frac{IG_1}{IG_m}\right)^2}\)</spa
 <h2><span class="header-section-number">13.5</span> Índices de selección para múltiples características</h2>
 <div class="graybox">
 <ul>
+<li><p>En esta sección vamos a introducir un cambio en la notación para indicar la transpuesta de una matriz o un vector, ya que usaremos <span class="math inline">\(^T\)</span>, dejando el uso de ′ para las derivadas.</p></li>
 <li><p>La heredabilidad del índice es igual a <span class="math inline">\({h^2_I=\frac{\sigma^2_{A_I}}{\sigma^2_I}=\frac{\mathbf{b&#39;Gb}}{\mathbf{b&#39;Pb}}}\)</span> con una respuesta a la selección equivalente a <span class="math inline">\(\Delta\mu=\left(\frac{i}{\sigma_I}\right)\frac{\mathbf{G}\mathbf{b}}{\sqrt{\mathbf{b}^{T}\mathbf{Pb}}}\)</span></p></li>
 <li><p>Si tenemos un conjunto de valores económicos para cada una de la características, entonces podemos ordenar estos pesos relativos en un vector <span class="math inline">\(\mathbf{a}\)</span> y por lo tanto, el mérito general del individuo (a partir de su fenotipo en las distintas características) es <span class="math inline">\(J=\mathbf{a^{T}z}\)</span></p></li>
 <li><p>El índice de Smith-Hazel <span class="math inline">\(I_s=\mathbf{b}^{T}_s\mathbf{z}=(\mathbf{P}^{-1}\mathbf{Ga})^{T}\mathbf{z}\)</span> necesita conocer con precisión ambas matrices de varianza-covarianza, <span class="math inline">\(\mathbf{G}\)</span> y <span class="math inline">\(\mathbf{P}\)</span>, así como el vector de pesos <span class="math inline">\(\mathbf{a}\)</span>. El mismo:</p></li>
@@ -499,7 +500,7 @@ superior a <span class="math inline">\({\left(\frac{IG_1}{IG_m}\right)^2}\)</spa
 <h2><span class="header-section-number">13.6</span> Métodos y técnicas avanzadas de selección</h2>
 <div id="blup-las-ecuaciones-del-modelo-mixto-lineal" class="section level3 unnumbered">
 <h3>BLUP: las ecuaciones del modelo mixto lineal</h3>
-<div class="graybox">
+<p>:::: {.graybox data-latex=""}</p>
 <ul>
 <li><p>Un <strong>modelo mixto lineal</strong> es un <strong>modelo mixto que combina efectos fijos y efectos aleatorios</strong>:
 1)<strong>Efectos fijos</strong> son aquellos que nos puede interesar contrastar sus niveles, que usualmente tienen pocos niveles y que en otros casos usaremos para compensar diferencias sistemáticas entre niveles. Normalmente, queremos <strong>estimar</strong> su valor.
@@ -522,9 +523,37 @@ superior a <span class="math inline">\({\left(\frac{IG_1}{IG_m}\right)^2}\)</spa
 \end{bmatrix}
 \end{equation}\]</span></p>
 </div>
+</div>
+<div id="recordatorio-de-conceptos-vinculados-a-la-respuesta-a-la-selección" class="section level2" number="13.7">
+<h2><span class="header-section-number">13.7</span> Recordatorio de conceptos vinculados a la Respuesta a la Selección</h2>
+<div class="graybox">
+<ul>
+<li><p>El <strong>diferencial de selección</strong> mide la <strong>superioridad fenotípica de los individuos seleccionados <span class="math inline">\({(\bar x_s)}\)</span> con respecto a la población de origen <span class="math inline">\({(\bar x_o)}\)</span></strong> y se calcula como <span class="math inline">\({S=\bar x_s - \bar x_o}\)</span>. El <strong>S poblacional</strong> resulta del promedio entre el ‘S de machos’ y el ‘S de hembras.’</p></li>
+<li><p>La <strong>intensidad de selección</strong> es el <strong>diferencial de selección estandarizado:</strong> <span class="math inline">\({i=\frac{S}{\sigma_P}}\)</span>. La <strong>i poblacional</strong> resulta del promedio entre la ‘i de machos’ y la ‘i de hembras.’</p></li>
+<li><p>El <strong>estimador del valor de cría del individuo</strong>, evaluado <strong>a través de sus parientes</strong> será:
+<span class="math inline">\({\hat A=r_{AA&#39;}\frac{n\ h^2}{1+(n-1)t}(z_i - \bar z)}\)</span></p></li>
+<li><p>La <strong>precisión en el valor de cría</strong> será <span class="math inline">\({r_{AC}=r_{AÂ}=r_{AA&#39;}.h. \sqrt{\frac{n}{1+(n-1)t}}}\)</span></p>
+<p>siendo:</p>
+<p><span class="math inline">\({r_{AA&#39;}}\)</span> la correlación entre el valor de cría del candidato a la selección (A) y el valor de cría del/de los individuo(s) fuente de información (A’), es decir el parentesco aditivo entre el candidato a la selección y los animales fuente de información.</p>
+<p><span class="math inline">\({n}\)</span> es el número de registros fenotípicos medidos en la fuente de información.</p>
+<p><span class="math inline">\({t}\)</span> es la correlacón fenotípica entre los registros y puede obtener 2 valores posibles según el método de selección:</p>
+<ul>
+<li>
+<p>Si son varios registros en el mismo candidato a la selección, <span class="math inline">\({t=repetibilidad}\)</span></p>
+</li>
+<li>
+<p>Si es un registro en varios animales parientes del candidato a la selección, <span class="math inline">\({t=r_{A_1A_2}.h^2}\)</span>, siendo <span class="math inline">\({r_{A_1A_2}}\)</span> el parentesco aditivo entre los animales fuente de información.</p>
+</li>
+</ul></li>
+<li><p>El <strong>desvío estándar aditivo de la población</strong> para la característica objetivo de selección se simboliza como <span class="math inline">\({\sigma_A}\)</span>.</p></li>
+<li><p>El <strong>intervalo generacional de la población</strong> resulta del promedio entre el ‘IG de machos’ y el ‘IG de hembras.’</p></li>
+<li><p>La <strong>Respuesta a la Selección Generacional</strong> se define como: <span class="math inline">\({R=PG= i.r_{AC}.{\sigma_A}}\)</span>.</p></li>
+<li><p>En el caso de <strong>Selección Fenótípica Individual con un registro</strong>, R se simplifica como: <span class="math inline">\({R=h^2.S}\)</span>.</p></li>
+<li><p>La <strong>Respuesta a la Selección Anual</strong> se define como: <span class="math inline">\({RA=PGA=\frac{R}{IG}=\frac{i.r_{AC}.{\sigma_A}}{IG}}\)</span>.</p></li>
+</ul>
+</div>
 <hr />
 
-</div>
 </div>
 </div>
             </section>
