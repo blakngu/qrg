@@ -28,7 +28,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-03-02" />
+<meta name="date" content="2022-06-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -122,6 +122,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.3" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#tres-o-más-alelos"><i class="fa fa-check"></i><b>2.3</b> Tres o más alelos</a></li>
 <li class="chapter" data-level="2.4" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#dónde-se-esconden-los-alelos-recesivos"><i class="fa fa-check"></i><b>2.4</b> ¿Dónde se “esconden” los alelos recesivos?</a></li>
 <li class="chapter" data-level="2.5" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#hardy-weinberg-en-especies-poliploides"><i class="fa fa-check"></i><b>2.5</b> Hardy-Weinberg en especies poliploides</a></li>
+<li class="chapter" data-level="2.6" data-path="variación-y-equilibrio-de-hardy-weinberg.html"><a href="variación-y-equilibrio-de-hardy-weinberg.html#la-estimación-de-frecuencias-en-el-locus-abo"><i class="fa fa-check"></i><b>2.6</b> La estimación de frecuencias en el locus ABO</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="deriva.html"><a href="deriva.html"><i class="fa fa-check"></i><b>3</b> Deriva Genética</a>
 <ul>
@@ -145,13 +146,11 @@ div.csl-indent {
 <li class="chapter" data-level="4.2" data-path="seleccion.html"><a href="seleccion.html#diferentes-formas-de-selección"><i class="fa fa-check"></i><b>4.2</b> Diferentes formas de selección</a>
 <ul>
 <li class="chapter" data-level="4.2.1" data-path="seleccion.html"><a href="seleccion.html#selección-direccional"><i class="fa fa-check"></i><b>4.2.1</b> Selección direccional</a></li>
-<li class="chapter" data-level="4.2.2" data-path="seleccion.html"><a href="seleccion.html#selección-disruptiva"><i class="fa fa-check"></i><b>4.2.2</b> Selección disruptiva</a></li>
+<li class="chapter" data-level="4.2.2" data-path="seleccion.html"><a href="seleccion.html#selección-estabilizadora"><i class="fa fa-check"></i><b>4.2.2</b> Selección estabilizadora</a></li>
+<li class="chapter" data-level="4.2.3" data-path="seleccion.html"><a href="seleccion.html#selección-disruptiva"><i class="fa fa-check"></i><b>4.2.3</b> Selección disruptiva</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="seleccion.html"><a href="seleccion.html#el-teorema-fundamental-de-la-selección-natural"><i class="fa fa-check"></i><b>4.3</b> El teorema fundamental de la selección natural</a></li>
-<li class="chapter" data-level="4.4" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-mutación"><i class="fa fa-check"></i><b>4.4</b> Equilibrio selección-mutación</a>
-<ul>
-<li class="chapter" data-level="4.4.1" data-path="seleccion.html"><a href="seleccion.html#el-principio-de-haldane-muller"><i class="fa fa-check"></i><b>4.4.1</b> El principio de Haldane-Muller</a></li>
-</ul></li>
+<li class="chapter" data-level="4.4" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-mutación"><i class="fa fa-check"></i><b>4.4</b> Equilibrio selección-mutación</a></li>
 <li class="chapter" data-level="4.5" data-path="seleccion.html"><a href="seleccion.html#la-fuerza-de-la-selección-natural"><i class="fa fa-check"></i><b>4.5</b> La fuerza de la selección natural</a></li>
 <li class="chapter" data-level="4.6" data-path="seleccion.html"><a href="seleccion.html#equilibrio-selección-deriva"><i class="fa fa-check"></i><b>4.6</b> Equilibrio selección-deriva</a></li>
 <li class="chapter" data-level="4.7" data-path="seleccion.html"><a href="seleccion.html#otros-tipos-de-selección-y-complejidades"><i class="fa fa-check"></i><b>4.7</b> Otros tipos de selección y complejidades</a></li>
@@ -278,6 +277,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#blup-las-ecuaciones-del-modelo-mixto-lineal"><i class="fa fa-check"></i>BLUP: las ecuaciones del modelo mixto lineal</a></li>
 </ul></li>
+<li class="chapter" data-level="13.7" data-path="selartifII.html"><a href="selartifII.html#recordatorio-de-conceptos-vinculados-a-la-respuesta-a-la-selección"><i class="fa fa-check"></i><b>13.7</b> Recordatorio de conceptos vinculados a la Respuesta a la Selección</a></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
 <ul>
@@ -420,7 +420,7 @@ z_{2jl}=\mu+G_j-I_j-E+e_{2jl}
 <h2><span class="header-section-number">15.4</span> Otros ejemplos de interacción genotipo-ambiente</h2>
 <div class="graybox">
 <ul>
-<li>Debemos tener en cuenta que la interacción entre genotipo y ambiente <strong>no solo se manifiesta en características cuantitativas</strong>. Por ejemplo, en el caso de patologías, la exposición a determina- dos elementos del ambiente puede hacer que genotipos que en otros ambientes no desarrollaban una enfermedad, en uno nuevo ambiente sí lo hagan, mientras que otros genotipos son insensibles a esto.</li>
+<li>Debemos tener en cuenta que la interacción entre genotipo y ambiente <strong>no solo se manifiesta en características cuantitativas</strong>. Por ejemplo, en el caso de patologías, la exposición a determinados elementos del ambiente puede hacer que genotipos que en otros ambientes no desarrollaban una enfermedad, en uno nuevo ambiente sí lo hagan, mientras que otros genotipos son insensibles a esto.</li>
 </ul>
 </div>
 <hr />
@@ -434,6 +434,9 @@ Fisher, Ronald Aylmer. 1930. <em>The Genetical Theory of Natural Selection</em>.
 </div>
 <div class="csl-entry">
 Wright, Sewall. 1922. <span>“<span class="nocase">Coefficients of inbreeding and relationship</span>.”</span> <em>American Naturalist</em> 56: 330–38.
+</div>
+<div class="csl-entry">
+Yasuda, N. 1984. <span>“<span class="nocase"><span>A</span> note on gene frequency estimation in the <span>A</span><span>B</span><span>O</span> and <span>A</span><span>B</span><span>O</span>-like system</span>.”</span> <em>Jinrui Idengaku Zasshi</em> 29 (3): 371–80.
 </div>
 </div>
 </div>
