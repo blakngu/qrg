@@ -28,7 +28,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-06-20" />
+<meta name="date" content="2022-07-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -203,7 +203,7 @@ div.csl-indent {
 <li class="chapter" data-level="8.4" data-path="modelogenbas.html"><a href="modelogenbas.html#efecto-medio"><i class="fa fa-check"></i><b>8.4</b> Efecto medio</a></li>
 <li class="chapter" data-level="8.5" data-path="modelogenbas.html"><a href="modelogenbas.html#valor-reproductivo-o-valor-de-cría"><i class="fa fa-check"></i><b>8.5</b> Valor reproductivo (o valor de cría)</a></li>
 <li class="chapter" data-level="8.6" data-path="modelogenbas.html"><a href="modelogenbas.html#desvío-de-dominancia"><i class="fa fa-check"></i><b>8.6</b> Desvío de dominancia</a></li>
-<li class="chapter" data-level="8.7" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-en-el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.7</b> La Varianza en el modelo genético básico</a>
+<li class="chapter" data-level="8.7" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-en-el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.7</b> La varianza en el modelo genético básico</a>
 <ul>
 <li><a href="modelogenbas.html#componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos">Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</a></li>
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-ambiental"><i class="fa fa-check"></i>La varianza ambiental</a></li>
@@ -233,9 +233,10 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="10.2" data-path="pargen.html"><a href="pargen.html#heredabilidad-en-sentido-amplio-y-sentido-estricto"><i class="fa fa-check"></i><b>10.2</b> Heredabilidad en sentido amplio y sentido estricto</a></li>
 <li class="chapter" data-level="10.3" data-path="pargen.html"><a href="pargen.html#heredabilidad-lograda"><i class="fa fa-check"></i><b>10.3</b> Heredabilidad lograda</a></li>
-<li class="chapter" data-level="10.4" data-path="pargen.html"><a href="pargen.html#repetibilidad"><i class="fa fa-check"></i><b>10.4</b> Repetibilidad</a></li>
-<li class="chapter" data-level="10.5" data-path="pargen.html"><a href="pargen.html#la-repetibilidad-como-herramienta-en-la-predicción"><i class="fa fa-check"></i><b>10.5</b> La repetibilidad como herramienta en la predicción</a></li>
-<li class="chapter" data-level="10.6" data-path="pargen.html"><a href="pargen.html#evolucionabilidad"><i class="fa fa-check"></i><b>10.6</b> Evolucionabilidad</a></li>
+<li class="chapter" data-level="10.4" data-path="pargen.html"><a href="pargen.html#heredabilidad-métodos-de-estimación-y-otros-conceptos"><i class="fa fa-check"></i><b>10.4</b> Heredabilidad: métodos de estimación y otros conceptos</a></li>
+<li class="chapter" data-level="10.5" data-path="pargen.html"><a href="pargen.html#repetibilidad"><i class="fa fa-check"></i><b>10.5</b> Repetibilidad</a></li>
+<li class="chapter" data-level="10.6" data-path="pargen.html"><a href="pargen.html#la-repetibilidad-como-herramienta-en-la-predicción"><i class="fa fa-check"></i><b>10.6</b> La repetibilidad como herramienta en la predicción</a></li>
+<li class="chapter" data-level="10.7" data-path="pargen.html"><a href="pargen.html#evolucionabilidad"><i class="fa fa-check"></i><b>10.7</b> Evolucionabilidad</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
 <ul>
@@ -409,7 +410,15 @@ z_{2jl}=\mu+G_j-I_j-E+e_{2jl}
 <ul>
 <li><p>Como la <strong>respuesta genotípica</strong> será ahora la norma de reacción, entonces, para una combinación específica de alelos <span class="math inline">\(i\)</span> y <span class="math inline">\(j\)</span>, la misma será <span class="math inline">\(R_{ij}=(a_i+a_j)+(c_i+c_j) E\)</span>. En <strong>características determinadas por varios genes de acción aditiva entre ellos</strong>, la norma de reacción será igual a la suma de los <span class="math inline">\(R_{ij}\)</span> de todos los <em>loci</em> involucrados, cada uno con sus frecuencias alélicas y funciones lineales de <span class="math inline">\(E\)</span>.</p></li>
 <li><p>La varianza aditiva bajo la norma de reacción será <span class="math inline">\(\sigma^2_A=\sigma^2_a+2E\sigma_{a,c}+E^2\sigma^2_c\)</span>, es decir, la suma de las varianzas y covarianza de interceptos y pendientes que forman la norma de reacción.</p></li>
-<li><p>Dada la correlación genética de la característica expresada en dos ambientes, <span class="math inline">\(E_j\)</span> y <span class="math inline">\(E_k\)</span>, la covarianza genética estará dada por: <span class="math inline">\(\sigma_{A_{j},A_{k}}=2pq[(a_1-a_2)+(c_1-c_2)E_j][(a_1-a_2)+(c_1-c_2)E_k]\)</span>. Por lo que si cualquiera de los dos ambientes es igual al punto de corte de los efectos medios, es decir <span class="math inline">\(E_j=E^{\star}\)</span> o <span class="math inline">\(E_k=E^{\star}\)</span>, entonces la covarianza genética de la característica será igual a cero y lo mismo para la correlación genética. Por otra parte, si <span class="math inline">\(E_j\)</span> y <span class="math inline">\(E_k\)</span> se encuentran ambos del mimso lado respecto a <span class="math inline">\(E^{\star}\)</span> (a la izquierda o a la derecha de dicho punto), entonces el producto <span class="math inline">\([(a_1-a_2)+(c_1-c_2)E_j][(a_1-a_2)+(c_1-c_2)E_k]\)</span> será positivo y la correlación genética será también positiva. Sin embargo, si los dos puntos se encuentran en lados diferentes respecto a <span class="math inline">\(E^{\star}\)</span>, entonces el producto será negativo y también lo será la correlación genética.</p></li>
+<li><p><span class="math inline">\(E^{\star}\)</span> es el ambiente correspondiente al punto de corte de las funciones de efecto medio:</p></li>
+</ul>
+<p><span class="math display" id="eq:gcgxe6">\[\begin{equation}
+\alpha_1=\alpha_2 \Leftrightarrow a_1+c_1E=a_2+c_2E \Leftrightarrow E(c_1-c_2)=(a_2-a_1) \therefore\\
+E^{\star}=\frac{(a_1-a_2)}{(c_2-c_1)} 
+\tag{15.1}
+\end{equation}\]</span></p>
+<ul>
+<li>Dada la correlación genética de la característica expresada en dos ambientes, <span class="math inline">\(E_j\)</span> y <span class="math inline">\(E_k\)</span>, la covarianza genética estará dada por: <span class="math inline">\(\sigma_{A_{j},A_{k}}=2pq[(a_1-a_2)+(c_1-c_2)E_j][(a_1-a_2)+(c_1-c_2)E_k]\)</span>. Por lo que si cualquiera de los dos ambientes es igual al punto de corte de los efectos medios, es decir <span class="math inline">\(E_j=E^{\star}\)</span> o <span class="math inline">\(E_k=E^{\star}\)</span>, entonces la covarianza genética de la característica será igual a cero y lo mismo para la correlación genética. Por otra parte, si <span class="math inline">\(E_j\)</span> y <span class="math inline">\(E_k\)</span> se encuentran ambos del mimso lado respecto a <span class="math inline">\(E^{\star}\)</span> (a la izquierda o a la derecha de dicho punto), entonces el producto <span class="math inline">\([(a_1-a_2)+(c_1-c_2)E_j][(a_1-a_2)+(c_1-c_2)E_k]\)</span> será positivo y la correlación genética será también positiva. Sin embargo, si los dos puntos se encuentran en lados diferentes respecto a <span class="math inline">\(E^{\star}\)</span>, entonces el producto será negativo y también lo será la correlación genética.</li>
 </ul>
 </div>
 <hr />

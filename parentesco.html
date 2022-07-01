@@ -28,7 +28,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-06-22" />
+<meta name="date" content="2022-07-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -203,7 +203,7 @@ div.csl-indent {
 <li class="chapter" data-level="8.4" data-path="modelogenbas.html"><a href="modelogenbas.html#efecto-medio"><i class="fa fa-check"></i><b>8.4</b> Efecto medio</a></li>
 <li class="chapter" data-level="8.5" data-path="modelogenbas.html"><a href="modelogenbas.html#valor-reproductivo-o-valor-de-cría"><i class="fa fa-check"></i><b>8.5</b> Valor reproductivo (o valor de cría)</a></li>
 <li class="chapter" data-level="8.6" data-path="modelogenbas.html"><a href="modelogenbas.html#desvío-de-dominancia"><i class="fa fa-check"></i><b>8.6</b> Desvío de dominancia</a></li>
-<li class="chapter" data-level="8.7" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-en-el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.7</b> La Varianza en el modelo genético básico</a>
+<li class="chapter" data-level="8.7" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-en-el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.7</b> La varianza en el modelo genético básico</a>
 <ul>
 <li><a href="modelogenbas.html#componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos">Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</a></li>
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-ambiental"><i class="fa fa-check"></i>La varianza ambiental</a></li>
@@ -233,9 +233,10 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="10.2" data-path="pargen.html"><a href="pargen.html#heredabilidad-en-sentido-amplio-y-sentido-estricto"><i class="fa fa-check"></i><b>10.2</b> Heredabilidad en sentido amplio y sentido estricto</a></li>
 <li class="chapter" data-level="10.3" data-path="pargen.html"><a href="pargen.html#heredabilidad-lograda"><i class="fa fa-check"></i><b>10.3</b> Heredabilidad lograda</a></li>
-<li class="chapter" data-level="10.4" data-path="pargen.html"><a href="pargen.html#repetibilidad"><i class="fa fa-check"></i><b>10.4</b> Repetibilidad</a></li>
-<li class="chapter" data-level="10.5" data-path="pargen.html"><a href="pargen.html#la-repetibilidad-como-herramienta-en-la-predicción"><i class="fa fa-check"></i><b>10.5</b> La repetibilidad como herramienta en la predicción</a></li>
-<li class="chapter" data-level="10.6" data-path="pargen.html"><a href="pargen.html#evolucionabilidad"><i class="fa fa-check"></i><b>10.6</b> Evolucionabilidad</a></li>
+<li class="chapter" data-level="10.4" data-path="pargen.html"><a href="pargen.html#heredabilidad-métodos-de-estimación-y-otros-conceptos"><i class="fa fa-check"></i><b>10.4</b> Heredabilidad: métodos de estimación y otros conceptos</a></li>
+<li class="chapter" data-level="10.5" data-path="pargen.html"><a href="pargen.html#repetibilidad"><i class="fa fa-check"></i><b>10.5</b> Repetibilidad</a></li>
+<li class="chapter" data-level="10.6" data-path="pargen.html"><a href="pargen.html#la-repetibilidad-como-herramienta-en-la-predicción"><i class="fa fa-check"></i><b>10.6</b> La repetibilidad como herramienta en la predicción</a></li>
+<li class="chapter" data-level="10.7" data-path="pargen.html"><a href="pargen.html#evolucionabilidad"><i class="fa fa-check"></i><b>10.7</b> Evolucionabilidad</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
 <ul>
@@ -332,6 +333,8 @@ div.csl-indent {
 <ul>
 <li><p>Para dos individuos <em>X</em> e <em>Y</em> , llamamos <strong>parentesco aditivo</strong> (<span class="math inline">\(a_{XY}\)</span>) entre ellos a la proporción esperada de alelos en común, idénticos por ascendencia (<strong>IDB</strong>) entre los genotipos de <em>X</em> e <em>Y</em>.</p></li>
 <li><p>La relación entre progenitor y descendiente es la única en la que la proporción de alelos compartidos está totalmente determinada.</p></li>
+<li><p>El <strong>parentesco aditivo</strong> es igual a el doble de la probabilidad de que al extraer al azar un alelo en cada individuo, los mismos sean <strong>IBD</strong>, es decir <span class="math inline">\(f_{XY}=\frac{1}{2}a_{XY} \therefore a_{XY}=2f_{XY}\)</span>.</p></li>
+<li><p>Por ejemplo, el parentesco aditivo entre un <strong>progenitor</strong> <span class="math inline">\(X\)</span> y su <strong>progenie</strong> <span class="math inline">\(Y\)</span> es <span class="math inline">\(a_{XY}=\frac{1}{2}\)</span>, entre <strong>medio hermanos</strong> <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> es <span class="math inline">\(a_{XY}=\frac{1}{4}\)</span>, mientras que en el caso de <strong>hermanos enteros</strong> <span class="math inline">\(a_{XY}=\frac{1}{2}\)</span>.</p></li>
 <li><p><strong>Parentesco directo</strong> es aquel que se da entre un individuo y su descendencia, sin importar el número de generaciones entre ellos. <strong>Parentesco colateral</strong> es aquel que no es directo, es decir, que se da entre individuos no directamente vinculados entre sí por una relación de ascendencia.</p></li>
 <li><p>La consanguinidad de un individuo es igual a la mitad del parentesco aditivo de sus padres, que es lo mismo que decir que es igual al coeficiente de coancestría de sus padres.</p></li>
 </ul>
@@ -343,7 +346,7 @@ div.csl-indent {
 <h3>Diagramas de flechas</h3>
 <div class="graybox">
 <ul>
-<li><p>Podemos calcualar el <strong>parentesco aditivo</strong> a partir de pedigrees considerando que cada pasaje de información de un individuo a su descendencia es de la mitad de su genoma.</p></li>
+<li><p>Podemos calcular el <strong>parentesco aditivo</strong> a partir de pedigrees considerando que cada pasaje de información de un individuo a su descendencia es de la mitad de su genoma.</p></li>
 <li><p>Para determinar el parentesco aditivo entre dos individuos <em>X</em> e <em>Y</em> debemos:</p></li>
 </ul>
 <ol style="list-style-type: decimal">
@@ -419,8 +422,17 @@ div.csl-indent {
 <div class="graybox">
 <ul>
 <li><p>Podemos describir la covarianza fenotípica mediante:
-$ {Cov(P_X,P_Y)}= a_{XY} ^2_A + d_{XY} ^2_D + ^2_{EC}$</p></li>
+<span class="math inline">\({Cov(P_X,P_Y)}= a_{XY}\ \sigma^2_A + d_{XY}\ \sigma^2_D + \sigma^2_{EC}\)</span></p></li>
 <li><p>El estimador general de la varianza aditiva se construye restando la fracción del estimado de varianza de dominancia y de la varianza del ambiente común que correspondan, al valor obtenido de estimar la covarianza entre observaciones en los pares de individuos (es decir, la covarianza fenotípica), y luego dividiendo entre el parentesco aditivo entre esos pares.</p></li>
+<li><p>Los <strong>estimadores de la varianza aditiva</strong> <span class="math inline">\(\sigma^2_A\)</span> más utilizados por su estructura familiar en los diseños experimentales de genética cuantitativa son:</p></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p><strong>Padre-Hijo (PH):</strong> <span class="math inline">\(\hat \sigma^2_A=2CovP_{PH}\)</span></p></li>
+<li><p><strong>Medio-Hermanos (MH):</strong> <span class="math inline">\(\hat \sigma^2_A=4CovP_{MH}\)</span></p></li>
+<li><p><strong>Hermanos Enteros (HE):</strong> <span class="math inline">\(\hat \sigma^{2}_{A}=2CovP_{HE}-\frac{1}{2}\ \hat \sigma^{2}_D -2\ \hat \sigma^{2}_{EC}\)</span></p></li>
+</ol>
+<p>Mientras que los dos primeros son estimadores insesgados de la varianza aditiva, si no conocemos los valores de la varianza de dominancia y del ambiente común (y las sustituimos por cero) el tercero es sesgado ya que en general sobrestima su “verdadero valor.”</p>
+<ul>
 <li><p>Los <strong>estimadores</strong> son estadísticos que pretenden estimar el verdadero valor del parámetro, son en sí mismo variables aleatorias ya que su valor dependerá, en general, de la muestra extraída.</p></li>
 <li><p>Las propiedades deseables en un estimador es que el mismo sea: <strong>insesgado</strong>, <strong>consistente</strong>, <strong>eficiente</strong> y <strong>suficiente</strong>.</p></li>
 </ul>
@@ -454,7 +466,7 @@ dónde <span class="math inline">\(Y_{ij}\)</span> representa el fenotipo del an
 <li><p>Mientras que en el <strong>parentesco estadístico</strong> estamos siempre hablando de alelos <strong>IBD</strong>, en el caso de parentesco genómico nos vamos a enfocar en alelos <strong>IBS</strong> (idénticos en estado), ya que no conocemos las relaciones entre los individuos y apenas el genotipo observado para cada <em>locus</em>.</p></li>
 <li><p>El valor esperado de la correlación de contenido génico en dos individuos es igual al parentesco aditivo entre los mismos, tal que:</p></li>
 </ul>
-<p><span class="math inline">\(r_{ij}=\frac{ {Cov}(z_i,z_j)}{\sqrt{\mathbb{V}(z_i)\mathbb{V}(z_j)}}=\frac{2pqA_{ij}}{2pq}r_{ij}=A_{ij}\)</span></p>
+<p><span class="math inline">\(r_{ij}=\frac{ {Cov}(z_i,z_j)}{\sqrt{\mathbb{V}(z_i)\mathbb{V}(z_j)}}=\frac{2pqA_{ij}}{2pq}\therefore r_{ij}=A_{ij}\)</span></p>
 </div>
 <hr />
 

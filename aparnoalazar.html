@@ -28,7 +28,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-04-18" />
+<meta name="date" content="2022-07-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -203,7 +203,7 @@ div.csl-indent {
 <li class="chapter" data-level="8.4" data-path="modelogenbas.html"><a href="modelogenbas.html#efecto-medio"><i class="fa fa-check"></i><b>8.4</b> Efecto medio</a></li>
 <li class="chapter" data-level="8.5" data-path="modelogenbas.html"><a href="modelogenbas.html#valor-reproductivo-o-valor-de-cría"><i class="fa fa-check"></i><b>8.5</b> Valor reproductivo (o valor de cría)</a></li>
 <li class="chapter" data-level="8.6" data-path="modelogenbas.html"><a href="modelogenbas.html#desvío-de-dominancia"><i class="fa fa-check"></i><b>8.6</b> Desvío de dominancia</a></li>
-<li class="chapter" data-level="8.7" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-en-el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.7</b> La Varianza en el modelo genético básico</a>
+<li class="chapter" data-level="8.7" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-en-el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.7</b> La varianza en el modelo genético básico</a>
 <ul>
 <li><a href="modelogenbas.html#componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos">Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</a></li>
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-ambiental"><i class="fa fa-check"></i>La varianza ambiental</a></li>
@@ -233,9 +233,10 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="10.2" data-path="pargen.html"><a href="pargen.html#heredabilidad-en-sentido-amplio-y-sentido-estricto"><i class="fa fa-check"></i><b>10.2</b> Heredabilidad en sentido amplio y sentido estricto</a></li>
 <li class="chapter" data-level="10.3" data-path="pargen.html"><a href="pargen.html#heredabilidad-lograda"><i class="fa fa-check"></i><b>10.3</b> Heredabilidad lograda</a></li>
-<li class="chapter" data-level="10.4" data-path="pargen.html"><a href="pargen.html#repetibilidad"><i class="fa fa-check"></i><b>10.4</b> Repetibilidad</a></li>
-<li class="chapter" data-level="10.5" data-path="pargen.html"><a href="pargen.html#la-repetibilidad-como-herramienta-en-la-predicción"><i class="fa fa-check"></i><b>10.5</b> La repetibilidad como herramienta en la predicción</a></li>
-<li class="chapter" data-level="10.6" data-path="pargen.html"><a href="pargen.html#evolucionabilidad"><i class="fa fa-check"></i><b>10.6</b> Evolucionabilidad</a></li>
+<li class="chapter" data-level="10.4" data-path="pargen.html"><a href="pargen.html#heredabilidad-métodos-de-estimación-y-otros-conceptos"><i class="fa fa-check"></i><b>10.4</b> Heredabilidad: métodos de estimación y otros conceptos</a></li>
+<li class="chapter" data-level="10.5" data-path="pargen.html"><a href="pargen.html#repetibilidad"><i class="fa fa-check"></i><b>10.5</b> Repetibilidad</a></li>
+<li class="chapter" data-level="10.6" data-path="pargen.html"><a href="pargen.html#la-repetibilidad-como-herramienta-en-la-predicción"><i class="fa fa-check"></i><b>10.6</b> La repetibilidad como herramienta en la predicción</a></li>
+<li class="chapter" data-level="10.7" data-path="pargen.html"><a href="pargen.html#evolucionabilidad"><i class="fa fa-check"></i><b>10.7</b> Evolucionabilidad</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="selartifI.html"><a href="selartifI.html"><i class="fa fa-check"></i><b>11</b> Selección Artificial I</a>
 <ul>
@@ -277,6 +278,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="" data-path="selartifII.html"><a href="selartifII.html#blup-las-ecuaciones-del-modelo-mixto-lineal"><i class="fa fa-check"></i>BLUP: las ecuaciones del modelo mixto lineal</a></li>
 </ul></li>
+<li class="chapter" data-level="13.7" data-path="selartifII.html"><a href="selartifII.html#recordatorio-de-conceptos-vinculados-a-la-respuesta-a-la-selección"><i class="fa fa-check"></i><b>13.7</b> Recordatorio de conceptos vinculados a la Respuesta a la Selección</a></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="endoexo.html"><a href="endoexo.html"><i class="fa fa-check"></i><b>14</b> Endocría, exocría, consanguinidad y depresión endogámica</a>
 <ul>
@@ -349,6 +351,7 @@ r=\frac{\bar{r}}{2}=\frac{1}{2}r_1+r_2
 <p><span class="math display">\[\begin{equation}
 r_{XY}=2 f_{XY}
 \end{equation}\]</span></p>
+<p>siendo <span class="math inline">\(r_{XY}\)</span> conocido como el parentesco aditivo (<span class="math inline">\(a_{XY}\)</span>).</p>
 </div>
 <hr />
 <p><br />
@@ -443,16 +446,19 @@ r_{GU}=\frac{ {Cov}(xy)}{\sqrt{\mathbb{V}(x)\mathbb{V}(y)}}=\frac{pqF}{\sqrt{pq 
 H_I=\frac{1}{n}\sum_{i=1}^n\hat{H}_i
 \tag{6.2}
 \end{equation}\]</span></p>
+<p>donde <span class="math inline">\(\hat{H}_i\)</span> es el estimador de la proporción de individuos heterocigotas en la <span class="math inline">\(i\)</span>ésima población.</p>
 <p>A su vez, la <strong>heterocigosidad media esperada dentro</strong> de las poblaciones la calculamos como</p>
 <p><span class="math display" id="eq:HS">\[\begin{equation}
 H_S=\frac{1}{n}\sum_{i=1}^n2p_iq_i
 \tag{6.3}
 \end{equation}\]</span></p>
+<p>con <span class="math inline">\(p_i\)</span> y <span class="math inline">\(q_i\)</span> las frecuencias de los dos alelos en la <span class="math inline">\(i\)</span>ésima población.</p>
 <p>Finalmente, la <strong>heterocigosidad esperada global</strong> es igual a</p>
 <p><span class="math display" id="eq:HT">\[\begin{equation}
 H_T=2\bar{p}\bar{q}
 \tag{6.4}
 \end{equation}\]</span></p>
+<p>con <span class="math inline">\(\bar{p}\)</span> y <span class="math inline">\(\bar{q}\)</span> las frecuencias alélicas promedio de todas las poblaciones.</p>
 <ul>
 <li><span class="math inline">\(F_{IS}\)</span>: es la correlación de alelos dentro de un individuo en relación con la población en la que se encuentra. A su vez, es la desviación media de las frecuencias de los genotipos con respecto a las expectativas de Hardy-Weinberg dentro de las poblaciones.</li>
 </ul>
@@ -512,7 +518,7 @@ subpoblación en la que se encuentra; equivalente a <span class="math inline">\(
 <p><span class="math display">\[\begin{equation}
 p_t=p^{\star}+(1-m)^t(p_0-p^{\star})
 \end{equation}\]</span></p>
-<p>con <span class="math inline">\(p_0\)</span> la frecuencia inicial <strong>en la isla</strong> y p^{} la frecuencia en el continente (que no cambia con las generaciones ya que su tamaño es infinito y además no recibe otro influjo).</p>
+<p>con <span class="math inline">\(p_0\)</span> la frecuencia inicial <strong>en la isla</strong> y <span class="math inline">\(p^{\star}\)</span> la frecuencia en el continente (que no cambia con las generaciones ya que su tamaño es infinito y además no recibe otro influjo).</p>
 <ul>
 <li>En el modelo de islas, el flujo de información genética es simétrico entre las <span class="math inline">\(d\)</span> islas que constituyen el <strong>ensemble</strong> de poblaciones (incluyendo la propia isla). Esto es equivalente a que en cada generación todas las islas envían una proporción <span class="math inline">\(m\)</span> de sus gametos a un <strong>pool central</strong> y que luego reciben esa misma proporción de gametos (pero de la mezcla), antes de la reproducción. En estas condiciones, la frecuencia del alelo <span class="math inline">\(A_1\)</span> en cualquiera de las islas estará dada por</li>
 </ul>
