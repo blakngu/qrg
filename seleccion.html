@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 4 Selección Natural | Genética II: Guía de Referencia Rápida</title>
   <meta name="description" content="Apuntes del curso Genética II. Contenido teórico mínimo para el seguimiento del curso" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 4 Selección Natural | Genética II: Guía de Referencia Rápida" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Apuntes del curso Genética II. Contenido teórico mínimo para el seguimiento del curso" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
@@ -28,7 +27,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-07-01" />
+<meta name="date" content="2023-03-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,8 +36,8 @@
   
 <link rel="prev" href="deriva.html"/>
 <link rel="next" href="dosloci.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -54,9 +53,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -162,7 +161,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.3" data-path="dosloci.html"><a href="dosloci.html#otras-medidas-de-asociación"><i class="fa fa-check"></i><b>5.3</b> Otras medidas de asociación</a></li>
 <li class="chapter" data-level="5.4" data-path="dosloci.html"><a href="dosloci.html#selección-en-modelos-de-dos-loci"><i class="fa fa-check"></i><b>5.4</b> Selección en modelos de dos <em>loci</em></a>
 <ul>
-<li><a href="dosloci.html#selección-en-un-locus-impacto-en-loci-en-desequilibrio-de-ligamiento">Selección en un locus: impacto en <em>loci</em> en desequilibrio de ligamiento</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#selección-en-un-locus-impacto-en-loci-en-desequilibrio-de-ligamiento"><i class="fa fa-check"></i>Selección en un locus: impacto en <em>loci</em> en desequilibrio de ligamiento</a></li>
 </ul></li>
 <li class="chapter" data-level="5.5" data-path="dosloci.html"><a href="dosloci.html#arrastre-genético-genetic-hitchhiking-o-genetic-draft"><i class="fa fa-check"></i><b>5.5</b> Arrastre genético (“genetic hitchhiking” o “genetic draft”)</a></li>
 <li class="chapter" data-level="5.6" data-path="dosloci.html"><a href="dosloci.html#causas-del-desequilibrio-de-ligamiento"><i class="fa fa-check"></i><b>5.6</b> Causas del desequilibrio de ligamiento</a></li>
@@ -205,7 +204,7 @@ div.csl-indent {
 <li class="chapter" data-level="8.6" data-path="modelogenbas.html"><a href="modelogenbas.html#desvío-de-dominancia"><i class="fa fa-check"></i><b>8.6</b> Desvío de dominancia</a></li>
 <li class="chapter" data-level="8.7" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-en-el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.7</b> La varianza en el modelo genético básico</a>
 <ul>
-<li><a href="modelogenbas.html#componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos">Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos"><i class="fa fa-check"></i>Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</a></li>
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-ambiental"><i class="fa fa-check"></i>La varianza ambiental</a></li>
 </ul></li>
 </ul></li>
@@ -325,10 +324,10 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="seleccion" class="section level1" number="4">
-<h1><span class="header-section-number">Capítulo 4</span> Selección Natural</h1>
-<div id="selección-natural-en-el-modelo-de-un-locus-con-dos-alelos" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Selección natural en el modelo de un locus con dos alelos</h2>
+<div id="seleccion" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Capítulo 4</span> Selección Natural<a href="seleccion.html#seleccion" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="selección-natural-en-el-modelo-de-un-locus-con-dos-alelos" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Selección natural en el modelo de un locus con dos alelos<a href="seleccion.html#selección-natural-en-el-modelo-de-un-locus-con-dos-alelos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li>La frecuencia del genotipo <span class="math inline">\(A_iA_j\)</span> después de la selección estará dada por el producto de su frecuencia antes de la selección, multiplicada por el <strong>filtro</strong> <span class="math inline">\(w_{ij}\)</span> y divido por el <strong>fitness medio</strong>, de forma que el <strong>fitness relativo</strong> de cada genotipo, ponderado por su frecuencia, sume a uno:</li>
@@ -441,10 +440,10 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-<div id="diferentes-formas-de-selección" class="section level2" number="4.2">
-<h2><span class="header-section-number">4.2</span> Diferentes formas de selección</h2>
-<div id="selección-direccional" class="section level3" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> Selección direccional</h3>
+<div id="diferentes-formas-de-selección" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Diferentes formas de selección<a href="seleccion.html#diferentes-formas-de-selección" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="selección-direccional" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Selección direccional<a href="seleccion.html#selección-direccional" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="graybox">
 <ul>
 <li><p>Bajo <strong>dominancia incompleta</strong>, el <strong>efecto de los heterocigotos</strong> cumple <span class="math inline">\(0&lt;h&lt;1\)</span> y para <strong>coeficientes de selección</strong> no nulos, <span class="math inline">\(s&gt;0\)</span> (es decir, <span class="math inline">\(w_{11}&gt;w_{22}\)</span>), entonces <span class="math inline">\(\Delta_s p&gt;0\)</span> para todo el intervalo <span class="math inline">\(0&lt;p&lt;1\)</span>, por lo que <span class="math inline">\(p \to 1\)</span>.</p></li>
@@ -456,8 +455,8 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-<div id="selección-estabilizadora" class="section level3" number="4.2.2">
-<h3><span class="header-section-number">4.2.2</span> Selección estabilizadora</h3>
+<div id="selección-estabilizadora" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Selección estabilizadora<a href="seleccion.html#selección-estabilizadora" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="graybox">
 <ul>
 <li><p>Bajo el efecto de la <strong>sobredominancia</strong>, es decir con el <strong>efecto de los heterocigotos</strong> <span class="math inline">\(h&lt;0\)</span> y para <strong>coeficientes de selección</strong> no nulos, <span class="math inline">\(s&gt;0\)</span> (es decir, <span class="math inline">\(w_{11}&gt;w_{22}\)</span>), entonces existirá un punto de equilibrio <strong>estable</strong> en el intervalo de frecuencias <span class="math inline">\(0&lt;p&lt;1\)</span>.</p></li>
@@ -486,8 +485,8 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-<div id="selección-disruptiva" class="section level3" number="4.2.3">
-<h3><span class="header-section-number">4.2.3</span> Selección disruptiva</h3>
+<div id="selección-disruptiva" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Selección disruptiva<a href="seleccion.html#selección-disruptiva" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="graybox">
 <ul>
 <li><p>Bajo el efecto de la <strong>subdominancia</strong>, es decir con el <strong>efecto de los heterocigotos</strong> <span class="math inline">\(h&gt;1\)</span> y para <strong>coeficientes de selección</strong> no nulos, <span class="math inline">\(s&gt;0\)</span> (es decir, <span class="math inline">\(w_{11}&gt;w_{22}\)</span>), entonces existirá un punto de equilibrio <strong>inestable</strong> en el intervalo de frecuencias <span class="math inline">\(0&lt;p&lt;1\)</span>.</p></li>
@@ -506,8 +505,8 @@ div.csl-indent {
 </p>
 </div>
 </div>
-<div id="el-teorema-fundamental-de-la-selección-natural" class="section level2" number="4.3">
-<h2><span class="header-section-number">4.3</span> El teorema fundamental de la selección natural</h2>
+<div id="el-teorema-fundamental-de-la-selección-natural" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> El teorema fundamental de la selección natural<a href="seleccion.html#el-teorema-fundamental-de-la-selección-natural" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li>Otra forma de escribir el <strong>fitness medio</strong>, ahora solo dependiendo de <span class="math inline">\(p\)</span> (y no de <span class="math inline">\(q\)</span>) es</li>
@@ -530,26 +529,26 @@ div.csl-indent {
 \end{equation}\]</span>
 es decir, <span class="math inline">\(\Delta_s p\)</span> es el producto de un término referido a la varianza genética por un término que es la tasa de cambio del <strong>fitness medio</strong> relativo.</p>
 <ul>
-<li>El <strong>teorema fundamental de la selección natural</strong>, debido a <span class="citation"><a href="#ref-Fisher1930" role="doc-biblioref">Fisher</a> (<a href="#ref-Fisher1930" role="doc-biblioref">1930</a>)</span>, establece que “La tasa de aumento de la aptitud media de cualquier organismo, en cualquier momento, que es atribuible a la selección natural que actúa a través de los cambios en las frecuencias de los genes, es exactamente igual a su varianza genética en la aptitud en ese momento” (<span class="citation"><a href="#ref-Edwards1994" role="doc-biblioref">Edwards</a> (<a href="#ref-Edwards1994" role="doc-biblioref">1994</a>)</span>).</li>
+<li>El <strong>teorema fundamental de la selección natural</strong>, debido a <span class="citation">Fisher (<a href="#ref-Fisher1930" role="doc-biblioref">1930</a>)</span>, establece que “La tasa de aumento de la aptitud media de cualquier organismo, en cualquier momento, que es atribuible a la selección natural que actúa a través de los cambios en las frecuencias de los genes, es exactamente igual a su varianza genética en la aptitud en ese momento” (<span class="citation">Edwards (<a href="#ref-Edwards1994" role="doc-biblioref">1994</a>)</span>).</li>
 </ul>
 </div>
 <hr />
 <p><br />
 </p>
 </div>
-<div id="equilibrio-selección-mutación" class="section level2" number="4.4">
-<h2><span class="header-section-number">4.4</span> Equilibrio selección-mutación</h2>
+<div id="equilibrio-selección-mutación" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Equilibrio selección-mutación<a href="seleccion.html#equilibrio-selección-mutación" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li>En nuestro modelo de un <em>locus</em> con dos alelos, con <strong>dominancia incompleta</strong>, asumiendo que la fuerza de selección contra el alelo <span class="math inline">\(A_2\)</span> consigue mantener la frecuencia del mismo muy baja (y por lo tanto <span class="math inline">\(q \approx 0\)</span>), si los alelos <span class="math inline">\(A_2\)</span> se reintroducen con una tasa <span class="math inline">\(u\)</span>, entonces el balance entre la mutación y la selección está dado aproximadamente por</li>
 </ul>
-<p><span class="math display">\[\begin{equation} 
+<p><span class="math display">\[\begin{equation}
 \hat{q} \approx \frac{u}{hs}
 \end{equation}\]</span></p>
 <ul>
 <li>En el caso de que <span class="math inline">\(h=0\)</span>, es decir cuando <span class="math inline">\(A_1\)</span> es dominante sobre <span class="math inline">\(A_2\)</span>, entonces una aproximación razonable a la frecuencia de equilibrio está dada por</li>
 </ul>
-<p><span class="math display">\[\begin{equation} 
+<p><span class="math display">\[\begin{equation}
 \hat{q} \approx \sqrt{\frac{u}{s}}
 \end{equation}\]</span></p>
 <ul>
@@ -560,8 +559,8 @@ es decir, <span class="math inline">\(\Delta_s p\)</span> es el producto de un t
 <p><br />
 </p>
 </div>
-<div id="la-fuerza-de-la-selección-natural" class="section level2" number="4.5">
-<h2><span class="header-section-number">4.5</span> La fuerza de la selección natural</h2>
+<div id="la-fuerza-de-la-selección-natural" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> La fuerza de la selección natural<a href="seleccion.html#la-fuerza-de-la-selección-natural" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li><p>El valor del <strong>coeficiente de selección</strong> es fundamental para conocer el tiempo a la fijación de un alelo bajo <strong>dominancia incompleta</strong> o de alcanzar el equilibrio en <strong>sobredominancia</strong>.</p></li>
@@ -573,14 +572,14 @@ es decir, <span class="math inline">\(\Delta_s p\)</span> es el producto de un t
 <p><br />
 </p>
 </div>
-<div id="equilibrio-selección-deriva" class="section level2" number="4.6">
-<h2><span class="header-section-number">4.6</span> Equilibrio selección-deriva</h2>
+<div id="equilibrio-selección-deriva" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Equilibrio selección-deriva<a href="seleccion.html#equilibrio-selección-deriva" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li>En nuestro modelo de un <em>locus</em> autosómico en un organismo diploide, <strong>asumiendo que el efecto de los alelos es aditivo</strong>, la probabilidad de fijación de un alelo <span class="math inline">\(A_1A_1\)</span> que se encuentra en frecuencia <span class="math inline">\(p\)</span> y que en homocigosis tiene ventaja <span class="math inline">\(s\)</span> sobre el genotipo <span class="math inline">\(A_2A_2\)</span> es</li>
 </ul>
 <p><span class="math display">\[\begin{equation}
-\pi_1(p)=\frac{1-e^{-N_esp}}{1-e^{-2N_es}}
+\pi_1(p)=\frac{1-e^{-2N_esp}}{1-e^{-2N_es}}
 \end{equation}\]</span></p>
 <ul>
 <li>En el caso particular de que además de todo lo anterior (<em>locus</em> autosómico en un organismo diploide, efecto de los alelos es <strong>aditivo</strong>), la <strong>probabilidad de fijación de un nuevo alelo</strong> <span class="math inline">\(A_1A_1\)</span> que en homocigosis tiene ventaja <span class="math inline">\(s\)</span> sobre el genotipo <span class="math inline">\(A_2A_2\)</span> es</li>
@@ -606,8 +605,8 @@ es decir, <span class="math inline">\(\Delta_s p\)</span> es el producto de un t
 <p><br />
 </p>
 </div>
-<div id="otros-tipos-de-selección-y-complejidades" class="section level2" number="4.7">
-<h2><span class="header-section-number">4.7</span> Otros tipos de selección y complejidades</h2>
+<div id="otros-tipos-de-selección-y-complejidades" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> Otros tipos de selección y complejidades<a href="seleccion.html#otros-tipos-de-selección-y-complejidades" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li><p>Los modelos que hemos tratado <em>in extenso</em> en este capítulo son modelos extremadamente simplificados de cómo opera la selección en la realidad.</p></li>
@@ -642,7 +641,6 @@ Fisher, Ronald Aylmer. 1930. <em>The Genetical Theory of Natural Selection</em>.
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -683,7 +681,7 @@ gitbook.start({
 },
 "download": ["ApuntesGeneticaII.pdf", "ApuntesGeneticaII.epub"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
@@ -699,7 +697,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
