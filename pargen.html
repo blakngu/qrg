@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 10 Parámetros Genéticos: Heredabilidad y Repetibilidad | Genética II: Guía de Referencia Rápida</title>
   <meta name="description" content="Apuntes del curso Genética II. Contenido teórico mínimo para el seguimiento del curso" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 10 Parámetros Genéticos: Heredabilidad y Repetibilidad | Genética II: Guía de Referencia Rápida" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Apuntes del curso Genética II. Contenido teórico mínimo para el seguimiento del curso" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
@@ -28,7 +27,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-07-01" />
+<meta name="date" content="2023-06-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,8 +36,8 @@
   
 <link rel="prev" href="parentesco.html"/>
 <link rel="next" href="selartifI.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -54,9 +53,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -162,7 +161,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.3" data-path="dosloci.html"><a href="dosloci.html#otras-medidas-de-asociación"><i class="fa fa-check"></i><b>5.3</b> Otras medidas de asociación</a></li>
 <li class="chapter" data-level="5.4" data-path="dosloci.html"><a href="dosloci.html#selección-en-modelos-de-dos-loci"><i class="fa fa-check"></i><b>5.4</b> Selección en modelos de dos <em>loci</em></a>
 <ul>
-<li><a href="dosloci.html#selección-en-un-locus-impacto-en-loci-en-desequilibrio-de-ligamiento">Selección en un locus: impacto en <em>loci</em> en desequilibrio de ligamiento</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#selección-en-un-locus-impacto-en-loci-en-desequilibrio-de-ligamiento"><i class="fa fa-check"></i>Selección en un locus: impacto en <em>loci</em> en desequilibrio de ligamiento</a></li>
 </ul></li>
 <li class="chapter" data-level="5.5" data-path="dosloci.html"><a href="dosloci.html#arrastre-genético-genetic-hitchhiking-o-genetic-draft"><i class="fa fa-check"></i><b>5.5</b> Arrastre genético (“genetic hitchhiking” o “genetic draft”)</a></li>
 <li class="chapter" data-level="5.6" data-path="dosloci.html"><a href="dosloci.html#causas-del-desequilibrio-de-ligamiento"><i class="fa fa-check"></i><b>5.6</b> Causas del desequilibrio de ligamiento</a></li>
@@ -205,7 +204,7 @@ div.csl-indent {
 <li class="chapter" data-level="8.6" data-path="modelogenbas.html"><a href="modelogenbas.html#desvío-de-dominancia"><i class="fa fa-check"></i><b>8.6</b> Desvío de dominancia</a></li>
 <li class="chapter" data-level="8.7" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-en-el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.7</b> La varianza en el modelo genético básico</a>
 <ul>
-<li><a href="modelogenbas.html#componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos">Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos"><i class="fa fa-check"></i>Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</a></li>
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-ambiental"><i class="fa fa-check"></i>La varianza ambiental</a></li>
 </ul></li>
 </ul></li>
@@ -325,12 +324,12 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pargen" class="section level1" number="10">
-<h1><span class="header-section-number">Capítulo 10</span> Parámetros Genéticos: Heredabilidad y Repetibilidad</h1>
-<div id="heredabilidad" class="section level2" number="10.1">
-<h2><span class="header-section-number">10.1</span> Heredabilidad</h2>
-<div id="la-heredabilidad-como-relación-de-varianzas" class="section level3 unnumbered">
-<h3>La heredabilidad como relación de varianzas</h3>
+<div id="pargen" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">Capítulo 10</span> Parámetros Genéticos: Heredabilidad y Repetibilidad<a href="pargen.html#pargen" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="heredabilidad" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> Heredabilidad<a href="pargen.html#heredabilidad" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="la-heredabilidad-como-relación-de-varianzas" class="section level3 unnumbered hasAnchor">
+<h3>La heredabilidad como relación de varianzas<a href="pargen.html#la-heredabilidad-como-relación-de-varianzas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="graybox">
 <ul>
 <li><p>El único componente transmisible del fenotipo de padres a hijos es el <strong>aditivo</strong>, el resto de los efectos esperamos que se comporten de forma aleatoria con media cero.</p></li>
@@ -345,8 +344,8 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-<div id="la-heredabilidad-como-regresión" class="section level3 unnumbered">
-<h3>La heredabilidad como regresión</h3>
+<div id="la-heredabilidad-como-regresión" class="section level3 unnumbered hasAnchor">
+<h3>La heredabilidad como regresión<a href="pargen.html#la-heredabilidad-como-regresión" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="graybox">
 <ul>
 <li>El valor de la pendiente de la recta de regresión del valor de cría (valor aditivo) en el fenotipo individual es igual a la heredabilidad (<span class="math inline">\(h^2\)</span>) puesto que:</li>
@@ -375,8 +374,8 @@ por lo tanto la <strong>pendiente de la regresión del fenotipo de los hijos en 
 </p>
 </div>
 </div>
-<div id="heredabilidad-en-sentido-amplio-y-sentido-estricto" class="section level2" number="10.2">
-<h2><span class="header-section-number">10.2</span> Heredabilidad en sentido amplio y sentido estricto</h2>
+<div id="heredabilidad-en-sentido-amplio-y-sentido-estricto" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> Heredabilidad en sentido amplio y sentido estricto<a href="pargen.html#heredabilidad-en-sentido-amplio-y-sentido-estricto" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li><p>Llamamos <strong>heredabilidad en sentido amplio</strong> o <strong>coeficiente de determinación genética</strong> (y la notamos como <span class="math inline">\(H^2\)</span>) a la proporción de la varianza fenotípica que se corresponde a los efectos genéticos:
@@ -391,8 +390,8 @@ por lo tanto la <strong>pendiente de la regresión del fenotipo de los hijos en 
 <p><br />
 </p>
 </div>
-<div id="heredabilidad-lograda" class="section level2" number="10.3">
-<h2><span class="header-section-number">10.3</span> Heredabilidad lograda</h2>
+<div id="heredabilidad-lograda" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> Heredabilidad lograda<a href="pargen.html#heredabilidad-lograda" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li><p>Llamaremos <strong>diferencial de selección</strong> (<span class="math inline">\(S\)</span>) a la diferencia entre la media de los individuos seleccionados y la media de la población de la que estos forman parte, es decir <span class="math inline">\(S=\mu_S-\mu_0\)</span>.</p></li>
@@ -405,8 +404,8 @@ por lo tanto la <strong>pendiente de la regresión del fenotipo de los hijos en 
 <p><br />
 </p>
 </div>
-<div id="heredabilidad-métodos-de-estimación-y-otros-conceptos" class="section level2" number="10.4">
-<h2><span class="header-section-number">10.4</span> Heredabilidad: métodos de estimación y otros conceptos</h2>
+<div id="heredabilidad-métodos-de-estimación-y-otros-conceptos" class="section level2 hasAnchor" number="10.4">
+<h2><span class="header-section-number">10.4</span> Heredabilidad: métodos de estimación y otros conceptos<a href="pargen.html#heredabilidad-métodos-de-estimación-y-otros-conceptos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li><p>Al realizar una estimación de la heredabilidad debemos tener en cuenta que los métodos y condiciones de estimación de la misma deben poder representar el uso pretendido. El denominador de la heredabilidad es la varianza fenotípica, uno de cuyos componentes es la varianza ambiental: en la medida de que la varianza ambiental es menor, menor será el denominador y por lo tanto mayor el cociente por lo que estimaciones en ambientes más controlados tenderán a estimar mayores heredabilidades. Teniendo esto en cuenta, no parecería recomendable utilizar estimaciones realizadas en laboratorios para diseñar un programa de mejora a campo.</p></li>
@@ -424,8 +423,8 @@ por lo tanto la <strong>pendiente de la regresión del fenotipo de los hijos en 
 <p><br />
 </p>
 </div>
-<div id="repetibilidad" class="section level2" number="10.5">
-<h2><span class="header-section-number">10.5</span> Repetibilidad</h2>
+<div id="repetibilidad" class="section level2 hasAnchor" number="10.5">
+<h2><span class="header-section-number">10.5</span> Repetibilidad<a href="pargen.html#repetibilidad" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li>Recordando que en el contexto de nuestro modelo genético básico le llamamos <strong>ambiental a todo lo que no es genético</strong> podemos descomponer los efectos ambientales en dos tipos:</li>
@@ -448,15 +447,15 @@ por lo tanto la <strong>pendiente de la regresión del fenotipo de los hijos en 
 <p><br />
 </p>
 </div>
-<div id="la-repetibilidad-como-herramienta-en-la-predicción" class="section level2" number="10.6">
-<h2><span class="header-section-number">10.6</span> La repetibilidad como herramienta en la predicción</h2>
+<div id="la-repetibilidad-como-herramienta-en-la-predicción" class="section level2 hasAnchor" number="10.6">
+<h2><span class="header-section-number">10.6</span> La repetibilidad como herramienta en la predicción<a href="pargen.html#la-repetibilidad-como-herramienta-en-la-predicción" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li><p>El concepto de <strong>repetibilidad</strong> se desprende del interés de conocer de antemano (para producciones que se repiten a lo largo de la vida del individuo) qué se puede esperar en un nuevo ciclo productivo del mismo.</p></li>
 <li><p>La <strong>predicción de un nuevo registro</strong> (<span class="math inline">\(x_2\)</span>) a partir del registro anterior (<span class="math inline">\(x_1\)</span>), a la que llamamos <strong>producción más probable</strong> (<strong>PMP</strong>) sería:
 <span class="math inline">\({PMP(x_2)=\bar x+(x_1-\bar x)\rho}\)</span> que se trata de un predictor lineal de la próxima producción basado en el desvío del presente registro respecto a la media poblacional (<span class="math inline">\({(x_1-\bar x)}\)</span>) o al grupo contemporáneo.</p></li>
 <li><p>Cuando tenemos más de un registro, podemos calcular la <strong>PMP</strong> para el registro <span class="math inline">\(n+1\)</span>:
-<span class="math inline">\({PMP(x_{n+1})=\bar x+ (x_{n+1}-\bar x)\left[\frac{n}{1+(n-1)t}\right]}\)</span> siendo <span class="math inline">\(t\)</span> el <strong>coeficiente de correlación intraclase</strong>.</p></li>
+<span class="math inline">\({PMP(x_{n+1})=\bar x+ (x_{n+1}-\bar x)\left[\frac{n \rho}{1+(n-1) \rho}\right]}\)</span>.</p></li>
 <li><p>El predictor del <strong>valor de cría</strong> de un individuo a partir del promedio de <span class="math inline">\(n\)</span> registros fenotípicos en el mismo será:
 <span class="math inline">\({\hat A_i=h^2 \left[\frac{n}{1+(n-1)\rho}\right] (x_i-\bar x)}\)</span>
 y la precisión de la estimación, <span class="math inline">\(r_{AC}\)</span>, estará dada ahora por
@@ -467,8 +466,8 @@ y la precisión de la estimación, <span class="math inline">\(r_{AC}\)</span>, 
 <p><br />
 </p>
 </div>
-<div id="evolucionabilidad" class="section level2" number="10.7">
-<h2><span class="header-section-number">10.7</span> Evolucionabilidad</h2>
+<div id="evolucionabilidad" class="section level2 hasAnchor" number="10.7">
+<h2><span class="header-section-number">10.7</span> Evolucionabilidad<a href="pargen.html#evolucionabilidad" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li>La capacidad de evolucionar de una característica y ha tomado el término de <strong>evolucionabilidad</strong> y se ha planteado que la heredabilidad no es una buena medida de la misma. En su lugar se ha propuesto la estandarización a partir de la media de la característica usando el <strong>coeficiente de variación aditivo</strong>, es decir el desvío aditivo dividido la media de la característica <span class="math inline">\({CV_A= \frac{\sigma_A}{\bar x}}\)</span>.</li>
@@ -488,7 +487,6 @@ y la precisión de la estimación, <span class="math inline">\(r_{AC}\)</span>, 
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -529,7 +527,7 @@ gitbook.start({
 },
 "download": ["ApuntesGeneticaII.pdf", "ApuntesGeneticaII.epub"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
@@ -545,7 +543,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
