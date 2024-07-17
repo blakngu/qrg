@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 3 Deriva Genética | Genética II: Guía de Referencia Rápida</title>
   <meta name="description" content="Apuntes del curso Genética II. Contenido teórico mínimo para el seguimiento del curso" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 3 Deriva Genética | Genética II: Guía de Referencia Rápida" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Apuntes del curso Genética II. Contenido teórico mínimo para el seguimiento del curso" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
@@ -28,7 +27,7 @@
 <meta name="author" content="(Paola Gaiero)" />
 
 
-<meta name="date" content="2022-07-01" />
+<meta name="date" content="2024-07-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,8 +36,8 @@
   
 <link rel="prev" href="variación-y-equilibrio-de-hardy-weinberg.html"/>
 <link rel="next" href="seleccion.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -54,17 +53,22 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
-
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 <style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -162,7 +166,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.3" data-path="dosloci.html"><a href="dosloci.html#otras-medidas-de-asociación"><i class="fa fa-check"></i><b>5.3</b> Otras medidas de asociación</a></li>
 <li class="chapter" data-level="5.4" data-path="dosloci.html"><a href="dosloci.html#selección-en-modelos-de-dos-loci"><i class="fa fa-check"></i><b>5.4</b> Selección en modelos de dos <em>loci</em></a>
 <ul>
-<li><a href="dosloci.html#selección-en-un-locus-impacto-en-loci-en-desequilibrio-de-ligamiento">Selección en un locus: impacto en <em>loci</em> en desequilibrio de ligamiento</a></li>
+<li class="chapter" data-level="" data-path="dosloci.html"><a href="dosloci.html#selección-en-un-locus-impacto-en-loci-en-desequilibrio-de-ligamiento"><i class="fa fa-check"></i>Selección en un locus: impacto en <em>loci</em> en desequilibrio de ligamiento</a></li>
 </ul></li>
 <li class="chapter" data-level="5.5" data-path="dosloci.html"><a href="dosloci.html#arrastre-genético-genetic-hitchhiking-o-genetic-draft"><i class="fa fa-check"></i><b>5.5</b> Arrastre genético (“genetic hitchhiking” o “genetic draft”)</a></li>
 <li class="chapter" data-level="5.6" data-path="dosloci.html"><a href="dosloci.html#causas-del-desequilibrio-de-ligamiento"><i class="fa fa-check"></i><b>5.6</b> Causas del desequilibrio de ligamiento</a></li>
@@ -205,7 +209,7 @@ div.csl-indent {
 <li class="chapter" data-level="8.6" data-path="modelogenbas.html"><a href="modelogenbas.html#desvío-de-dominancia"><i class="fa fa-check"></i><b>8.6</b> Desvío de dominancia</a></li>
 <li class="chapter" data-level="8.7" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-en-el-modelo-genético-básico"><i class="fa fa-check"></i><b>8.7</b> La varianza en el modelo genético básico</a>
 <ul>
-<li><a href="modelogenbas.html#componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos">Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</a></li>
+<li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#componentes-genéticos-de-la-varianza-un-locus-con-dos-alelos"><i class="fa fa-check"></i>Componentes genéticos de la varianza: un <em>locus</em> con dos alelos</a></li>
 <li class="chapter" data-level="" data-path="modelogenbas.html"><a href="modelogenbas.html#la-varianza-ambiental"><i class="fa fa-check"></i>La varianza ambiental</a></li>
 </ul></li>
 </ul></li>
@@ -325,10 +329,10 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="deriva" class="section level1" number="3">
-<h1><span class="header-section-number">Capítulo 3</span> Deriva Genética</h1>
-<div id="el-rol-de-los-procesos-estocásticos-en-la-genética" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> El rol de los procesos estocásticos en la genética</h2>
+<div id="deriva" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Capítulo 3</span> Deriva Genética<a href="deriva.html#deriva" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="el-rol-de-los-procesos-estocásticos-en-la-genética" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> El rol de los procesos estocásticos en la genética<a href="deriva.html#el-rol-de-los-procesos-estocásticos-en-la-genética" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li><p>La importancia de las <strong>proporciones de partida</strong> puesto que estas determinaran las probabilidades de obtener cierto resultado.</p></li>
@@ -338,8 +342,8 @@ div.csl-indent {
 <p><br />
 </p>
 </div>
-<div id="el-modelo-de-wright-fisher" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> El modelo de Wright-Fisher</h2>
+<div id="el-modelo-de-wright-fisher" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> El modelo de Wright-Fisher<a href="deriva.html#el-modelo-de-wright-fisher" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li><p>El modelo de <strong>Wright-Fisher</strong> asume que de un <strong>pool infinito</strong> de gametos, con las frecuencias de los alelos proporcionales a lo muestreado para constituir la generación anterior, muestreamos nuevamente <span class="math inline">\(2N\)</span> alelos, que será mi nueva población.</p></li>
@@ -366,10 +370,10 @@ T_{ij}={2N \choose j}\left(\frac{i}{2N}\right)^{j}\left(\frac{2N-i}{2N}\right)^{
 <p><br />
 </p>
 </div>
-<div id="el-rol-de-la-subdivisión-poblacional-en-la-evolución-de-las-frecuencias-alélicas" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> El rol de la subdivisión poblacional en la evolución de las frecuencias alélicas</h2>
-<div id="homocigosidad-y-heterocigosidad" class="section level3 unnumbered">
-<h3>Homocigosidad y Heterocigosidad</h3>
+<div id="el-rol-de-la-subdivisión-poblacional-en-la-evolución-de-las-frecuencias-alélicas" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> El rol de la subdivisión poblacional en la evolución de las frecuencias alélicas<a href="deriva.html#el-rol-de-la-subdivisión-poblacional-en-la-evolución-de-las-frecuencias-alélicas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="homocigosidad-y-heterocigosidad" class="section level3 unnumbered hasAnchor">
+<h3>Homocigosidad y Heterocigosidad<a href="deriva.html#homocigosidad-y-heterocigosidad" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="graybox">
 <ul>
 <li><p>La recursión para el <strong>coeficiente de fijación</strong> <span class="math inline">\(F\)</span> en la generación <span class="math inline">\(t\)</span>, <span class="math inline">\(F_t\)</span> es igual a:
@@ -392,8 +396,8 @@ H_t=\left(1-\frac{1}{2N}\right)^t H_0 \approx H_0 e^{\frac{-t}{2N}}
 </p>
 </div>
 </div>
-<div id="tamaño-efectivo-poblacional" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Tamaño efectivo poblacional</h2>
+<div id="tamaño-efectivo-poblacional" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Tamaño efectivo poblacional<a href="deriva.html#tamaño-efectivo-poblacional" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li><p>El tamaño efectivo de una población (<span class="math inline">\(N_e\)</span>) raramente coincide con el tamaño censal de la misma (<span class="math inline">\(N\)</span>), siendo las razones para esto diversas (variación del tamaño en el tiempo, diferente número de machos que de hembras, diferencias muy importantes en el número de descendientes entre reproductores candidatos, etc.).</p></li>
@@ -419,10 +423,10 @@ N_e^v=\frac{pq}{2 Var(\Delta p)}
 <p><br />
 </p>
 </div>
-<div id="aproximación-de-difusión" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Aproximación de difusión</h2>
-<div id="caminatas-al-azar-y-procesos-de-difusión" class="section level3 unnumbered">
-<h3>Caminatas al azar y procesos de difusión</h3>
+<div id="aproximación-de-difusión" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Aproximación de difusión<a href="deriva.html#aproximación-de-difusión" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="caminatas-al-azar-y-procesos-de-difusión" class="section level3 unnumbered hasAnchor">
+<h3>Caminatas al azar y procesos de difusión<a href="deriva.html#caminatas-al-azar-y-procesos-de-difusión" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="graybox">
 <div class="center">
 <p><strong>PARA RECORDAR</strong></p>
@@ -445,12 +449,12 @@ N_e^v=\frac{pq}{2 Var(\Delta p)}
 </p>
 </div>
 </div>
-<div id="probabilidad-de-fijación-y-tiempos-de-fijación" class="section level2" number="3.6">
-<h2><span class="header-section-number">3.6</span> Probabilidad de fijación y tiempos de fijación</h2>
+<div id="probabilidad-de-fijación-y-tiempos-de-fijación" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Probabilidad de fijación y tiempos de fijación<a href="deriva.html#probabilidad-de-fijación-y-tiempos-de-fijación" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <p>Bajo la condición de que la deriva sea la única fuerza evolutiva actuando, en una población de <span class="math inline">\(N\)</span> individuos diploides, en un <em>locus</em> con dos alelos:</p>
 <ul>
-<li><p>La <strong>probabilidad de fijación</strong> de un alelo es igual a su frecuencia <span class="math inline">\(p=\frac{1}{2N}\)</span></p></li>
+<li><p>La <strong>probabilidad de fijación</strong> de un alelo es igual a su frecuencia, por lo que en el caso de un alelo que recién aparece en una población, su probabilidad de fijación es <span class="math inline">\(p=\frac{1}{2N}\)</span></p></li>
 <li><p>El <strong>tiempo a la eventual fijación</strong> de ese alelo es <span class="math inline">\(\bar{t_1}(p)=-4N \frac{(1-p) \ln(1-p)}{p}\)</span></p></li>
 <li><p>La <strong>probabilidad de perder un alelo</strong> es igual a <span class="math inline">\(1-p\)</span></p></li>
 <li><p>El <strong>tiempo a la eventual pérdida</strong> de ese alelo es <span class="math inline">\(\bar{t_0}(p)=-4N \frac{(p) \ln(p)}{(1-p)}\)</span></p></li>
@@ -461,8 +465,8 @@ N_e^v=\frac{pq}{2 Var(\Delta p)}
 <p><br />
 </p>
 </div>
-<div id="el-modelo-coalescente" class="section level2" number="3.7">
-<h2><span class="header-section-number">3.7</span> El modelo coalescente</h2>
+<div id="el-modelo-coalescente" class="section level2 hasAnchor" number="3.7">
+<h2><span class="header-section-number">3.7</span> El modelo coalescente<a href="deriva.html#el-modelo-coalescente" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="graybox">
 <ul>
 <li>En organismos diploides, en poblaciones de N individuos, la probabilidad de coalescer de dos alelos en la generación anterior es</li>
@@ -499,7 +503,6 @@ t=4N(1-\frac{1}{k})
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -540,7 +543,7 @@ gitbook.start({
 },
 "download": ["ApuntesGeneticaII.pdf", "ApuntesGeneticaII.epub"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
@@ -556,7 +559,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
